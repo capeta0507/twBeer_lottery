@@ -22,28 +22,30 @@
 <body>
   <div class="axaBg">
     <div class="myNavbar">
-      <div class="logo">
-        <a href="https://www.twbeer.com.tw/over18" target="_blank">
-          <img src="images/TBlogo.png" alt="">
-        </a>
-      </div>
-      <div class="icon">
-        <a href="">
-          <img src="images/ig.png" alt="">
-        </a>
-        <a href="">
-          <img src="images/fb.png" alt="">
-        </a>
-        <a class="menu-m">
-          <div class="hamBar">
-            <div class="bar bar1 transition">
-              <img class="" src="./images/bar.png" alt="">
+      <div class="menu_container">
+        <div class="logo">
+          <a href="https://www.twbeer.com.tw/over18" target="_blank">
+            <img src="images/TBlogo.png" alt="">
+          </a>
+        </div>
+        <div class="icon">
+          <a href="">
+            <img src="images/ig.png" alt="">
+          </a>
+          <a href="">
+            <img src="images/fb.png" alt="">
+          </a>
+          <a class="menu-m">
+            <div class="hamBar">
+              <div class="bar bar1 transition">
+                <img class="" src="./images/bar.png" alt="">
+              </div>
+              <div class="bar bar2 transition">
+                <img class="" src="./images/bar.png" alt="">
+              </div>
             </div>
-            <div class="bar bar2 transition">
-              <img class="" src="./images/bar.png" alt="">
-            </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     </div>
     <div class="menu-block-mb">
@@ -115,9 +117,7 @@
           <div class="actTitle act01">
             <img src="./images/home/act_title01.png" alt="">
           </div>
-          <div class="plus">
-            <!-- <img class="open" src="./images/home/plus.png" alt=""> -->
-          </div>
+          <div class="plus"></div>
           <div id="collapseOne" class="collapse" data-parent="#accordion">
             <div class="card-body coll_text">
               2020年7月8日 (三) 至2020年10月25日 (日) 活動期間內購買貼有活動貼紙之【罐裝18天台灣生啤酒330ml】，撕開罐身貼紙，掃描QR code並完成登錄集點，
@@ -271,6 +271,8 @@
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    autoplay: true, /* this is the new line */
+    autoplaySpeed: 3000,
     accessibility: false,
     prevArrow:"<button type='button' class='slick-prev pull-left'><img class='leftBtn prevImg' src='./images/home/left.png' ></button>",
     nextArrow:"<button type='button' class='slick-next pull-right'><img class='leftBtn nextImg' src='./images/home/right.png' ></button>"

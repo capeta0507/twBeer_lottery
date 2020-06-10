@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台啤抽獎</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <div class="axa18Bg_2">
+    <div class="myNavbar">
+      <div class="menu_container">
+        <div class="logo">
+          <a href="https://www.twbeer.com.tw/over18" target="_blank">
+            <img src="images/TBlogo.png" alt="">
+          </a>
+        </div>
+        <div class="icon">
+          <a href="">
+            <img src="images/ig.png" alt="">
+          </a>
+          <a href="">
+            <img src="images/fb.png" alt="">
+          </a>
+          <a class="menu-m">
+            <div class="hamBar">
+              <div class="bar bar1 transition">
+                <img class="" src="./images/bar.png" alt="">
+              </div>
+              <div class="bar bar2 transition">
+                <img class="" src="./images/bar.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="menu-block-mb">
+      <ul class="menu">
+        <li><a href="index.html" class="menu-1">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 首頁
+        </a></li>
+        <li><a href="#section1" class="menu-2">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 我要抽獎
+        </a></li>
+        <li><a href="#section2" class="menu-3">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 我要兌換
+        </a></li>
+        <li><a href="#section3" class="menu-4">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 我的帳號
+        </a></li>
+        <li><a href="#section4" class="menu-5">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 集點兌獎狀況
+        </a></li>
+        <li><a href="#section5" class="menu-5">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 抽獎得獎名單
+        </a></li>
+      </ul>
+    </div>
+    <div class="overContain2">
+      <div class="over18_block">
+        <div class="main_title">
+          <div class="form_title">
+						<!-- <img src="./images/18Logo.png" alt=""> -->
+						註冊
+          </div>
+        </div>
+        <div class="formLogin">
+          <div class="input-group mb-3">
+            <div>真實姓名</div>
+            <input type="text" name="name" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+					<div class="input-group mb-3">
+						<div>生日：</div>
+						<br>
+						<select class="form-control" id="myYear"></select>
+						<select class="form-control" id="myMonth"></select>
+						<select class="form-control" id="myDate"></select>
+          </div>
+          <div class="input-group mb-3">
+            <div>手機號碼：</div>
+            <input type="tel" maxlength="10" name="cellphone_number" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+					<div class="input-group mb-3">
+            <div>電子信箱：</div>
+            <input type="email" name="name" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+					<div class="input-group mb-3">
+            <div>獎品寄送住址：</div>
+            <input type="text" name="place" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+					<div class="input-group mb-3">
+						<div class="form_remake">*小提醒：以上資料需與中獎/兌獎資料相同才符合領獎資格，再檢查看看資訊是否都正確唷！</div>
+					</div>
+					<div class="input-group mb-3">
+            <div>帳號:(自動設定為手機號碼)</div>
+            <input type="tel" maxlength="10" name="account_number" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1" disabled>
+					</div>
+					<div class="input-group mb-3">
+            <div>自訂密碼</div>
+            <input type="password" maxlength="10" name="password" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+					<div class="input-group mb-3">
+						<div class="flex">
+							<input class="ipt_check" type="checkbox" id="attention">
+							<label for="attention">我已詳細閱讀注意事項，並且同意遵守主
+								辦單位蒐集、處理及個人資料之告知事項
+								(個人資料蒐集聲明及服務條款)。</label>
+						</div>
+					</div>
+					<div class="input-group mb-3">
+						<div class="flex">
+							<input class="ipt_check" type="checkbox" id="registered">
+							<label for="registered">我確認填寫之註冊資料皆為正確，若有不
+								同，主辦單位有權取消抽獎及兌獎資格，
+								並恕不另行通知。</label>	
+						</div>
+
+					</div>
+          <div class="input-group mb-3">
+            <div class="btnGreen">登入</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </div>
+</body>
+<script>	
+	// select option
+	const yearOptions = [
+    { value: '2014', label: '2014'},
+    { value: '2013', label: '2013'},
+    { value: '2012', label: '2012'},
+    { value: '2011', label: '2011'},
+    { value: '2010', label: '2010'},
+    { value: '2009', label: '2009'},
+    { value: '2008', label: '2008'},
+    { value: '2007', label: '2007'},
+    { value: '2006', label: '2006'},
+    { value: '2005', label: '2005'},
+    { value: '2004', label: '2004'},
+    { value: '2003', label: '2003'},
+    { value: '2002', label: '2002'},
+    { value: '2001', label: '2001'},
+    { value: '2000', label: '2000'},
+    { value: '1999', label: '1999'},
+    { value: '1998', label: '1998'},
+    { value: '1997', label: '1997'},
+    { value: '1996', label: '1996'},
+    { value: '1995', label: '1995'},
+    { value: '1994', label: '1994'},
+    { value: '1993', label: '1993'},
+    { value: '1992', label: '1992'},
+    { value: '1991', label: '1991'},
+    { value: '1990', label: '1990'},
+    { value: '1949', label: '1949'},
+    { value: '1920', label: '1920'},
+    { value: '1900', label: '1900'},
+  ]; 
+  const monthOptions = [
+    { value: '01', label: '01'},
+    { value: '02', label: '02'},
+    { value: '03', label: '03'},
+    { value: '04', label: '04'},
+    { value: '05', label: '05'},
+    { value: '06', label: '06'},
+    { value: '07', label: '07'},
+    { value: '08', label: '08'},
+    { value: '09', label: '09'},
+    { value: '10', label: '10'},
+    { value: '11', label: '11'},
+    { value: '12', label: '12'},
+  ]; 
+  const day31 = [
+    { value: '01', label: '01'},
+    { value: '02', label: '02'},
+    { value: '03', label: '03'},
+    { value: '04', label: '04'},
+    { value: '05', label: '05'},
+    { value: '06', label: '06'},
+    { value: '07', label: '07'},
+    { value: '08', label: '08'},
+    { value: '09', label: '09'},
+    { value: '10', label: '10'},
+    { value: '11', label: '11'},
+    { value: '12', label: '12'},
+    { value: '13', label: '13'},
+    { value: '14', label: '14'},
+    { value: '15', label: '15'},
+    { value: '16', label: '16'},
+    { value: '17', label: '17'},
+    { value: '18', label: '18'},
+    { value: '19', label: '19'},
+    { value: '20', label: '20'},
+    { value: '21', label: '21'},
+    { value: '22', label: '22'},
+    { value: '23', label: '23'},
+    { value: '24', label: '24'},
+    { value: '25', label: '25'},
+    { value: '26', label: '26'},
+    { value: '27', label: '27'},
+    { value: '28', label: '28'},
+    { value: '29', label: '29'},
+    { value: '30', label: '30'},
+    { value: '31', label: '31'}
+  ]
+  const day30 = [
+    { value: '01', label: '01'},
+    { value: '02', label: '02'},
+    { value: '03', label: '03'},
+    { value: '04', label: '04'},
+    { value: '05', label: '05'},
+    { value: '06', label: '06'},
+    { value: '07', label: '07'},
+    { value: '08', label: '08'},
+    { value: '09', label: '09'},
+    { value: '10', label: '10'},
+    { value: '11', label: '11'},
+    { value: '12', label: '12'},
+    { value: '13', label: '13'},
+    { value: '14', label: '14'},
+    { value: '15', label: '15'},
+    { value: '16', label: '16'},
+    { value: '17', label: '17'},
+    { value: '18', label: '18'},
+    { value: '19', label: '19'},
+    { value: '20', label: '20'},
+    { value: '21', label: '21'},
+    { value: '22', label: '22'},
+    { value: '23', label: '23'},
+    { value: '24', label: '24'},
+    { value: '25', label: '25'},
+    { value: '26', label: '26'},
+    { value: '27', label: '27'},
+    { value: '28', label: '28'},
+    { value: '29', label: '29'},
+    { value: '30', label: '30'}
+  ]
+  const day29 = [
+    { value: '01', label: '01'},
+    { value: '02', label: '02'},
+    { value: '03', label: '03'},
+    { value: '04', label: '04'},
+    { value: '05', label: '05'},
+    { value: '06', label: '06'},
+    { value: '07', label: '07'},
+    { value: '08', label: '08'},
+    { value: '09', label: '09'},
+    { value: '10', label: '10'},
+    { value: '11', label: '11'},
+    { value: '12', label: '12'},
+    { value: '13', label: '13'},
+    { value: '14', label: '14'},
+    { value: '15', label: '15'},
+    { value: '16', label: '16'},
+    { value: '17', label: '17'},
+    { value: '18', label: '18'},
+    { value: '19', label: '19'},
+    { value: '20', label: '20'},
+    { value: '21', label: '21'},
+    { value: '22', label: '22'},
+    { value: '23', label: '23'},
+    { value: '24', label: '24'},
+    { value: '25', label: '25'},
+    { value: '26', label: '26'},
+    { value: '27', label: '27'},
+    { value: '28', label: '28'},
+    { value: '29', label: '29'}
+  ]
+  const day28 = [
+    { value: '01', label: '01'},
+    { value: '02', label: '02'},
+    { value: '03', label: '03'},
+    { value: '04', label: '04'},
+    { value: '05', label: '05'},
+    { value: '06', label: '06'},
+    { value: '07', label: '07'},
+    { value: '08', label: '08'},
+    { value: '09', label: '09'},
+    { value: '10', label: '10'},
+    { value: '11', label: '11'},
+    { value: '12', label: '12'},
+    { value: '13', label: '13'},
+    { value: '14', label: '14'},
+    { value: '15', label: '15'},
+    { value: '16', label: '16'},
+    { value: '17', label: '17'},
+    { value: '18', label: '18'},
+    { value: '19', label: '19'},
+    { value: '20', label: '20'},
+    { value: '21', label: '21'},
+    { value: '22', label: '22'},
+    { value: '23', label: '23'},
+    { value: '24', label: '24'},
+    { value: '25', label: '25'},
+    { value: '26', label: '26'},
+    { value: '27', label: '27'},
+    { value: '28', label: '28'}
+	]
+	for(let x=0;x<yearOptions.length;x++){
+		$("#myYear").append(`<option value=${yearOptions[x].value}>${yearOptions[x].label}</option>`);
+	} 
+	for(let x=0;x<monthOptions.length;x++){
+		$("#myMonth").append(`<option value=${monthOptions[x].value}>${monthOptions[x].label}</option>`);
+	} 
+	for(let x=0;x<day31.length;x++){
+		$("#myDate").append(`<option value=${day31[x].value}>${day31[x].label}</option>`);
+	} 
+</script>
+</html>

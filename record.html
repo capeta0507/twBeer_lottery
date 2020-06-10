@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台啤抽獎</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="./CSS/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="./CSS/slick-theme.css"/>
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <div class="axa18Bg">
+    <div class="myNavbar">
+      <div class="menu_container">
+        <div class="logo">
+          <a href="https://www.twbeer.com.tw/over18" target="_blank">
+            <img src="images/TBlogo.png" alt="">
+          </a>
+        </div>
+        <div class="icon">
+          <a href="">
+            <img src="images/ig.png" alt="">
+          </a>
+          <a href="">
+            <img src="images/fb.png" alt="">
+          </a>
+          <a class="menu-m">
+            <div class="hamBar">
+              <div class="bar bar1 transition">
+                <img class="" src="./images/bar.png" alt="">
+              </div>
+              <div class="bar bar2 transition">
+                <img class="" src="./images/bar.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="menu-block-mb">
+      <ul class="menu">
+        <li><a href="index.html" class="menu-1">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 首頁
+        </a></li>
+        <li><a href="#section1" class="menu-2">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 我要抽獎
+        </a></li>
+        <li><a href="#section2" class="menu-3">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 我要兌換
+        </a></li>
+        <li><a href="#section3" class="menu-4">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 我的帳號
+        </a></li>
+        <li><a href="#section4" class="menu-5">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 集點兌獎狀況
+        </a></li>
+        <li><a href="#section5" class="menu-5">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 抽獎得獎名單
+        </a></li>
+      </ul>
+    </div>
+    <div class="contain">
+      <div class="main_title">
+				<div class="homeLogout">
+					<!-- 登出 -->
+					<img src="./images/home/login.png" alt="">
+				</div>
+			</div>
+			<div class="homeContain">
+				<div class="homeTitle" style="text-align: center;">
+					歷史紀錄
+				</div>
+				<div class="historyContent historyList" style="display: block;">
+					<div class="recordContent homePoint" style="text-align: center;">
+						尚有 <span id="point">20</span> 點活動點數
+					</div>
+					<div id="record01" class="input-group mt02">
+						<div class="btnGreen">點數紀錄查詢</div>
+					</div>
+					<div id="record02" class="input-group mt02">
+						<div class="btnGreen">中獎紀錄查詢</div>
+					</div>
+					<div id="record03" class="input-group mt02">
+						<div class="btnGreen">兌換紀錄查詢</div>
+					</div>
+				</div>
+        <div id="history01" class="historyContent historyModal" style="display: none;">
+          <div class="recTitle">
+            點數紀錄查詢
+          </div>
+					<div class="recordCard recordYesData">
+						<div class="plus">
+							<img src="./images/close.png" alt="">
+						</div>
+						<div class="recordContent homePoint" style="text-align: center;">
+							尚有 <span id="point">20</span> 點活動點數
+            </div>
+            <div class="record_title">
+              <div class="record_ptag01">編號</div>
+              <div class="record_ptag02">交易日期</div>
+              <div class="record_ptag03">內容說明</div>
+              <div class="record_ptag04">禮品</div>
+              <div class="record_ptag05">點數</div>
+            </div>
+            <div class="getcity01">
+              <div class="cityCent citizen01 ">
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>2020-07-05</td>
+                    <td>抽獎扣點</td>
+                    <td></td>
+                    <td class="point4">1</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2020-07-05</td>
+                    <td>抽獎扣點</td>
+                    <td></td>
+                    <td class="point4">1</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>2020-07-07</td>
+                    <td>抽獎扣點</td>
+                    <td>三人露營帳</td>
+                    <td class="point4">-2</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>2020-07-10</td>
+                    <td>兌換扣點</td>
+                    <td>Super set全品項</td>
+                    <td class="point4">-160</td>
+                  </tr>
+                </tbody>
+                </table>
+              </div>
+            </div>
+					</div>
+				</div>
+        <div id="history02" class="historyContent historyModal" style="display: none;">
+          <div class="recTitle">
+            中獎紀錄查詢
+          </div>
+					<div class="recordCard recordNoData">
+						<div class="plus">
+							<img src="./images/close.png" alt="">
+            </div>
+            <div class="recYdata" style="display: none;">
+              <div class="record_title">
+                <div class="record_tag01">編號</div>
+                <div class="record_tag02">交易日期</div>
+                <div class="record_tag03">禮品</div>
+                <div class="record_tag04">數量</div>
+                <div class="record_tag05">中獎確認函</div>
+              </div>
+              <div class="getcity01">
+                <div class="cityCent citizen02 ">
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>2020-07-05</td>
+                      <td>三人露營帳</td>
+                      <td>1</td>
+                      <td class="point4">下載</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2020-07-05</td>
+                      <td>雙人摺疊傘+椅</td>
+                      <td>2</td>
+                      <td class="point4">下載</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>2020-07-07</td>
+                      <td>購物摺疊車</td>
+                      <td>2</td>
+                      <td class="point4">下載</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>2020-07-10</td>
+                      <td>手提燒烤架</td>
+                      <td>1</td>
+                      <td class="point4">下載</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- 無資料 -->
+            <div class="recNoData" style="display: block;">
+              未中獎
+            </div>
+          </div>
+        </div>
+        <div id="history03" class="historyContent historyModal" style="display: none;">
+          <div class="recTitle">
+            兌獎紀錄查詢
+          </div>
+					<div class="recordCard recordYesData">
+						<div class="plus">
+							<img src="./images/close.png" alt="">
+            </div>
+            <div class="recYdata" style="display: block;">
+              <div class="record_title">
+                <div class="record_tag01">編號</div>
+                <div class="record_tag02">交易日期</div>
+                <div class="record_tag03">禮品</div>
+                <div class="record_tag04">數量</div>
+                <div class="record_tag05">中獎確認函</div>
+              </div>
+              <div class="getcity01">
+                <div class="cityCent citizen02 ">
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>2020-07-05</td>
+                      <td>三人露營帳</td>
+                      <td>1</td>
+                      <td class="point4">下載</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2020-07-05</td>
+                      <td>雙人摺疊傘+椅</td>
+                      <td>2</td>
+                      <td class="point4">下載</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>2020-07-07</td>
+                      <td>購物摺疊車</td>
+                      <td>2</td>
+                      <td class="point4">下載</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>2020-07-10</td>
+                      <td>手提燒烤架</td>
+                      <td>1</td>
+                      <td class="point4">下載</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- 無資料 -->
+            <div class="recNoData" style="display: none;">
+              未中獎
+            </div>
+          </div>
+        </div>
+			</div>
+    </div>
+    <footer></footer>
+  </div>
+</body>
+<script>
+  $('#record01').on('click', function(){
+    $('.historyList').hide();
+    $('#history01').show();
+  });
+  $('#record02').on('click', function(){
+    $('.historyList').hide();
+    $('#history02').show();
+  });
+  $('#record03').on('click', function(){
+    $('.historyList').hide();
+    $('#history03').show();
+  });
+  $('.plus').on('click', function(){
+    $('.historyModal').hide();
+    $('.historyList').show();
+  })
+</script>
+</html>

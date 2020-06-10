@@ -93,6 +93,12 @@ a:hover {
 	background-position: center bottom;
 	background-size: 100%;
 }
+.axa18Bg_2{
+	width: 100%;
+	background-image: url(../images/over18/axa.png);
+	background-position: center bottom;
+	background-size: 100%;
+}
 .eighteen_logo{
 	width: 60%;
 	margin: 0 auto;
@@ -218,10 +224,15 @@ footer{
 }
 .contain{
 	width: 90%;
+	max-width: 1200px;
 	margin: 0 auto;
-	margin-top: 75px;
-	padding-top: 20px;
+	padding-top: 90px;
 	padding-bottom: 15vh;
+}
+.menu_container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 .overContain{
 	width: 90%;
@@ -229,9 +240,20 @@ footer{
 	padding-top: 95px;
 	/* padding-bottom: 15vh; */
 }
+.overContain2{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 95px;
+	padding-bottom: 15vh;
+}
 .over18_block{
 	width: 100%;
 	margin-top: 20px;
+}
+.over18_block2{
+	width: 100%;
+	/* margin-top: 50px; */
+	/* margin-top: -20%; */
 }
 .over18_checked{
 	width: 50%;
@@ -295,15 +317,15 @@ footer{
 	left: -2px;
 }
 .act01{
-	width: 25%;
+	width: 93px;
 	height: auto;
 }
 .act02{
-	width: 35%;
+	width: 130px;
 	height: auto;
 }
 .act03{
-	width: 45%;
+	width: 166px;
 	height: auto;
 }
 .actCard .actTitle > img{
@@ -412,9 +434,9 @@ input:focus::-webkit-input-placeholder {color: transparent;}
 input:focus {
 	outline: none;
 }
-.form{
+.formLogin{
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 0px;
 	display: block;
 }
 .formIpt{
@@ -438,6 +460,7 @@ input:focus {
 	font-size: 20px;
 	color: #fff;
 	padding: 10px 0;
+	cursor: pointer;
 }
 .btnFlex{
 	display: flex; 
@@ -445,4 +468,311 @@ input:focus {
 }
 .btnFlex .btnBlock{
 	width: 45%;
+}
+.form_remake{
+	color: #005F23;
+	font-size: 16px;
+	font-weight: 500;
+}
+.flex{
+	display: flex;
+}
+.ipt_check{
+	margin-top: .4rem;
+	margin-right: .4rem;
+}
+.form_title{
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	color: #00712f;
+	font-size: 30px;
+}
+.mt01{
+	margin: 150px 0;
+}
+.mt02{
+	margin: 50px 0;
+}
+.mt03{
+	margin: 30px 0;
+}
+/* home */
+.home_logo{
+	width: 60%;
+	margin: 0 auto;
+}
+.home_logo > img{
+	width: 100%;
+}
+.homeLogout{
+	width: 20%;
+	position: absolute;
+	right: 0;
+}
+.homeLogout > img{
+	width: 100%;
+}
+.homeContain{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.homeTitle{
+	/* width: 20%; */
+	width: 100%;
+	font-weight: 600;
+	font-size: 30px;
+	color: #00712f;
+}
+.homeTitle > img{
+	width: 100%;
+}
+.homeContent{
+	width: 100%;
+	margin: 30px 0;
+}
+.homeTag{
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: #00712f;
+}
+.homePoint{
+	font-size: 24px;
+}
+.homePoint > span{
+	font-size: 30px;
+	color: #00712f;
+}
+/* 歷史紀錄 */
+.recordContent{
+	width: 100%;
+	margin: 0;
+}
+.recTitle{
+	width: auto;
+	position: absolute;
+	top: -15px;
+	left: -0px;
+	background-color: #00712F;
+	color: #FFD200;
+	font-size: 16px;
+	/* text-align: center; */
+	padding: 5px 10px;
+	z-index: 55;
+}
+.recordCard{
+	width: 100%;
+	height: 50vh;
+	overflow-y: scroll;
+	border: 2px solid #008333;
+	position: relative;
+	padding: 30px 0px;
+	margin: 20px 0;
+}
+.recordYesData{
+	background-color: #fff;
+}
+.recordNoData{
+	background-color: rgba(255,255,255,.6);
+}
+.recordCard .plus{
+	width: 34px;
+	height: 34px;
+	background-color: #008333;
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	text-align: center;
+	color: #fff;
+}
+.recordCard .plus > img{
+	width: 100%;
+}
+.historyContent{
+	position: relative;
+}
+.record_title{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	text-align: center;
+	font-size: 12px;
+	padding-bottom: 15px;
+	color: #008333;
+}
+/* 兌獎 */
+.record_tag01{
+	width: 15%;
+}
+.record_tag02{
+	width: 18%;
+}
+.record_tag03{
+	width: 24%;
+}
+.record_tag04{
+	width: 19%;
+}
+.record_tag05{
+	width: 30%;
+}
+/* 積點 */
+.record_ptag01{
+	width: 15%;
+}
+.record_ptag02{
+	width: 30%;
+}
+.record_ptag03{
+	width: 30%;
+	/* text-align: left; */
+}
+.record_ptag04{
+	width: 15%;
+}
+.record_ptag05{
+	width: 15%;
+	/* text-align: right; */
+}
+.cityCent {
+	width: 95%;
+	font-size: 12px;
+	margin: 0 auto;
+}
+.cityCent > table{
+	color: #000;
+	text-align: center;
+	width: 100%;
+	margin: 0px auto;
+	border-collapse: collapse;
+}
+.citizen01 table tbody tr td:nth-child(1){
+	width: 5%;
+}
+.citizen01 table tbody tr td:nth-child(2){
+	width: 38%;
+}
+.citizen01 table tbody tr td:nth-child(3){
+	width: 18%;
+}
+.citizen01 table tbody tr td:nth-child(4){
+	width: 26%;
+}
+.citizen01 table tbody tr td:nth-child(5){
+	width: 10%;
+}
+.citizen02 table tbody tr td:nth-child(1){
+	width: 5%;
+}
+.citizen02 table tbody tr td:nth-child(2){
+	width: 28%;
+}
+.citizen02 table tbody tr td:nth-child(3){
+	width: 25%;
+}
+.citizen02 table tbody tr td:nth-child(4){
+	width: 10%;
+}
+.citizen02 table tbody tr td:nth-child(5){
+	width: 20%;
+}
+tr > td{
+	padding: 10px 0;
+}
+.recNoData{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	font-size: 30px;
+	color: #00712f;
+    top: 50%;
+    margin-top: -8%;
+}
+@media (max-width: 500px){
+	.record_title{
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		text-align: center;
+		font-size: 12px;
+		padding-bottom: 15px;
+		color: #008333;
+	}
+	/* 兌獎 */
+	.record_tag01{
+		width: 15%;
+	}
+	.record_tag02{
+		width: 18%;
+	}
+	.record_tag03{
+		width: 24%;
+	}
+	.record_tag04{
+		width: 19%;
+	}
+	.record_tag05{
+		width: 30%;
+	}
+	/* 積點 */
+	.record_ptag01{
+		width: 15%;
+	}
+	.record_ptag02{
+		width: 30%;
+	}
+	.record_ptag03{
+		width: 30%;
+		/* text-align: left; */
+	}
+	.record_ptag04{
+		width: 15%;
+	}
+	.record_ptag05{
+		width: 15%;
+		/* text-align: right; */
+	}
+	.cityCent {
+		width: 95%;
+		font-size: 12px;
+		margin: 0 auto;
+	}
+	.cityCent > table{
+		color: #000;
+		text-align: center;
+		width: 100%;
+		margin: 0px auto;
+		border-collapse: collapse;
+	}
+	.citizen01 table tbody tr td:nth-child(1){
+		width: 5%;
+	}
+	.citizen01 table tbody tr td:nth-child(2){
+		width: 38%;
+	}
+	.citizen01 table tbody tr td:nth-child(3){
+		width: 18%;
+	}
+	.citizen01 table tbody tr td:nth-child(4){
+		width: 26%;
+	}
+	.citizen01 table tbody tr td:nth-child(5){
+		width: 10%;
+	}
+	.citizen02 table tbody tr td:nth-child(1){
+		width: 5%;
+	}
+	.citizen02 table tbody tr td:nth-child(2){
+		width: 28%;
+	}
+	.citizen02 table tbody tr td:nth-child(3){
+		width: 25%;
+	}
+	.citizen02 table tbody tr td:nth-child(4){
+		width: 10%;
+	}
+	.citizen02 table tbody tr td:nth-child(5){
+		width: 20%;
+	}
 }
