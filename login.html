@@ -16,7 +16,7 @@
   <script src="js/index.js"></script>
 </head>
 <body>
-  <div class="axa18Bg">
+  <div class="axa18Bg_2">
     <div class="myNavbar">
       <div class="menu_container">
         <div class="logo">
@@ -66,32 +66,36 @@
         </a></li>
       </ul>
     </div>
-    <div class="overContain">
+    <div class="overContain3">
       <div class="over18_block">
         <div class="main_title">
-          <div class="eighteen_logo">
+          <div class="eighteen_logo2">
             <img src="./images/18Logo.png" alt="">
           </div>
         </div>
         <div class="formLogin">
           <div class="input-group mb-3">
-            <div>帳號</div>
-            <input type="tel" maxlength="10" name="account_number" class="formIpt" placeholder="*帳號註冊時預設為手機號碼" aria-label="Username" aria-describedby="basic-addon1">
+            <div class="iptName">帳號</div>
+            <input id="myAccount" type="tel" maxlength="10" name="account_number" class="formIpt" placeholder="*帳號註冊時預設為手機號碼" aria-label="Username" aria-describedby="basic-addon1">
           </div>
-          <div class="input-group mb-3">
-            <div>密碼</div>
-            <input type="password" maxlength="10" name="password" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+          <div class="input-group">
+            <div class="iptName">密碼</div>
+            <input id="myPassword" type="password" maxlength="10" name="password" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
           </div>
-          <div class="input-group mb-3">
-            <div class="btnGreen">登入</div>
+          <div class="input-group mb-3 loginSub">
+            *密碼長度限定為6～10位數，<br>
+            可以混合使用英文字母及數字
+          </div>
+          <div id="login" class="input-group mb-3 allBtn">
+            <img src="./images/button/loginBtn.png" alt="">
           </div>
           <div class="input-group mb-3 btnFlex">
-            <div class="btnBlock">
-              <div class="btnGreen">忘記密碼</div> 
-            </div>
-            <div class="btnBlock">
-              <div class="btnGreen">尚未註冊</div>
-            </div>
+            <a href="forgetPassword.html" class="btnBlock">
+              <img src="./images/button/forgetBtn.png" alt="">
+            </a>
+            <a href="registered.html" class="btnBlock">
+              <img src="./images/button/registeredBtn.png" alt="">
+            </a>
           </div>
         </div>
       </div>
@@ -100,6 +104,16 @@
   </div>
 </body>
 <script>
-  
+  var myAccount = $('#myAccount').val();
+  var myPassword = $('#myPassword').val()
+  $('#login').on('click', function(){
+    if(myAccount === ''){
+      alert('請輸入帳號');
+    } else if(myPassword === ''){
+      alert('請輸入密碼');
+    } else {
+      window.location = 'home.html'
+    }
+  })
 </script>
 </html>

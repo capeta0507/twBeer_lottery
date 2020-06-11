@@ -66,76 +66,148 @@
         </a></li>
       </ul>
     </div>
-    <div class="overContain2">
+    <div class="overContain3">
       <div class="over18_block">
         <div class="main_title">
-          <div class="form_title">
-						<!-- <img src="./images/18Logo.png" alt=""> -->
-						註冊
+          <div class="form_title2">
+						<img src="./images/registered_title.png" alt="">
           </div>
         </div>
         <div class="formLogin">
           <div class="input-group mb-3">
-            <div>真實姓名</div>
+            <div class="iptName">真實姓名：</div>
             <input type="text" name="name" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-					</div>
-					<div class="input-group mb-3">
-						<div>生日：</div>
-						<br>
-						<select class="form-control" id="myYear"></select>
-						<select class="form-control" id="myMonth"></select>
-						<select class="form-control" id="myDate"></select>
           </div>
           <div class="input-group mb-3">
-            <div>手機號碼：</div>
+            <div class="iptName">性別：</div>
+            <div class="flex relate mr30">
+              <label class="iptName" for="male">男</label>
+              <input class="ipt_check reCheck_1" name="gender" type="radio" id="male">
+              <img id="reCheck01" class="checkmark" src="./images/checked.png" alt="">
+            </div>
+            <div class="flex relate mr30">
+              <label class="iptName" for="female">女</label>
+              <input class="ipt_check reCheck_2" name="gender" type="radio" id="female">
+              <img id="reCheck02" class="checkmark" src="./images/checked.png" alt="">
+						</div>
+					</div>
+					<div class="input-group mb-3">
+						<div class="iptName">生日：</div>
+            <br>
+            <div class="input-group">
+              <div class="flex" style="width: 100%;">
+                <div class="selWidth">
+                  <select class="formSelect" id="myYear"></select>
+                </div>
+                <div class="iptName mgL01">年</div>
+                <div class="selWidth2">
+                  <select class="formSelect" id="myMonth"></select>
+                </div>
+                <div class="iptName mgL01">月</div>
+                <div class="selWidth2">
+                  <select class="formSelect" id="myDate"></select>
+                </div>
+                <div class="iptName mgL01">日</div>
+              </div>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <div class="iptName">手機號碼：</div>
             <input type="tel" maxlength="10" name="cellphone_number" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
           </div>
 					<div class="input-group mb-3">
-            <div>電子信箱：</div>
+            <div class="iptName">電子信箱：</div>
             <input type="email" name="name" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
 					</div>
 					<div class="input-group mb-3">
-            <div>獎品寄送住址：</div>
+            <div class="iptName">獎品寄送住址：</div>
             <input type="text" name="place" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
 					</div>
 					<div class="input-group mb-3">
 						<div class="form_remake">*小提醒：以上資料需與中獎/兌獎資料相同才符合領獎資格，再檢查看看資訊是否都正確唷！</div>
 					</div>
 					<div class="input-group mb-3">
-            <div>帳號:(自動設定為手機號碼)</div>
+            <div class="iptName">帳號:(自動設定為手機號碼)</div>
             <input type="tel" maxlength="10" name="account_number" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1" disabled>
 					</div>
 					<div class="input-group mb-3">
-            <div>自訂密碼</div>
+            <div class="iptName">自訂密碼</div>
             <input type="password" maxlength="10" name="password" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
 					</div>
 					<div class="input-group mb-3">
-						<div class="flex">
-							<input class="ipt_check" type="checkbox" id="attention">
-							<label for="attention">我已詳細閱讀注意事項，並且同意遵守主
-								辦單位蒐集、處理及個人資料之告知事項
-								(個人資料蒐集聲明及服務條款)。</label>
+						<div class="flex ">
+              <div class="makeCheck relate mr20">
+                <input class="ipt_check2 reCheck_3" type="checkbox" id="attention">
+                <img id="reCheck03" class="checkmark2" src="./images/checked.png" alt="">
+              </div>
+              <div class="makeLabel">
+							  <label for="attention">我已詳細閱讀注意事項，並且同意遵守主
+								辦單位蒐集、處理及個人資料之告知事項<br><a id="takeProt">履行個人資料保護法義務告知書</a>。</label>                
+              </div>
 						</div>
 					</div>
 					<div class="input-group mb-3">
-						<div class="flex">
-							<input class="ipt_check" type="checkbox" id="registered">
-							<label for="registered">我確認填寫之註冊資料皆為正確，若有不
-								同，主辦單位有權取消抽獎及兌獎資格，
-								並恕不另行通知。</label>	
+						<div class="flex relate">
+              <div class="makeCheck relate mr20">
+                <input class="ipt_check2 reCheck_4" type="checkbox" id="registered">
+                <img id="reCheck04" class="checkmark2" src="./images/checked.png" alt="">
+              </div>
+              <div class="makeLabel">
+                <label for="registered">我確認填寫之註冊資料皆為正確，若有不
+                  同，主辦單位有權取消抽獎及兌獎資格，
+                  並恕不另行通知。</label>
+              </div>
 						</div>
 
 					</div>
-          <div class="input-group mb-3">
-            <div class="btnGreen">登入</div>
+          <div id="login" class="input-group mb-3 allBtn">
+            <img src="./images/button/loginBtn.png" alt="">
           </div>
         </div>
       </div>
     </div>
     <footer></footer>
   </div>
+  <div id="protag" class="prize_block" style="display: none">
+    <div class="makeClose closeBlock"></div>
+		<div class="protag_modal">
+      <p>【履行個人資料保護法義務告知書】</p>
+      <div class="closeBtn closeBlock">
+        <img src="./images/close.png" alt="">
+      </div>
+      <div class="protag_content">
+        主辦單位及合作廠商茲依據個人資料保護法規定，向您告知下列事項：
+        1. 個人資料範圍：自活動網站／Facebook蒐集及參
+        加者個人提供之參加者個人資料，包括(Instagram、
+        twitter或Facebook)帳號、姓名、照片、行動電話號
+        碼、電子郵件、郵寄地址及身分證正反面資料(僅中獎
+        者需提供)等。
+        2. 蒐集之目的：執行【2020年18天台灣生啤酒_搶鮮
+        撒野瘋趴趣集點活動】暨相關業務及所銷售商品之消
+        費者行銷活動（下稱「本活動」）。本活動之參加、
+        中獎聯繫及稅務單據寄送等與本活動執行相關事宜。
+        3. 利用之期間：本活動期間。主辦單位及合作廠商於
+        本活動結束時將參加者之個人資料全數銷毀，不另作
+        他用。但取得提供個資者之書面同意者，不在此限。
+        4. 利用之地區：台、澎、金、馬。
+        5. 利用之對象：主辦單位及其關係企業，或與主辦單
+        位及其關係企業因業務需要訂有契約關係或業務往來
+        之機構。
+        6. 利用之方式：符合個人資料保護相關法令以自動化
+        機器或其他非自動化之利用方式之蒐集、處理、利用
+        7. 參加者行使權利之方式：
+      </div>
+      </div>
+		</div>
+  </div>
 </body>
 <script>	
+  $('#takeProt').on('click', function(){
+    $('.prize_block').show();
+  })
+  $('.closeBlock').on('click', function(){
+    $('.prize_block').hide();
+  });
 	// select option
 	const yearOptions = [
     { value: '2014', label: '2014'},
@@ -315,6 +387,43 @@
 	} 
 	for(let x=0;x<day31.length;x++){
 		$("#myDate").append(`<option value=${day31[x].value}>${day31[x].label}</option>`);
-	} 
+  } 
+  $('#male').on('click', function(){
+    let check = $(this).is(':checked');
+    console.log('male', check);
+    if(check === true){
+      $('#reCheck01').attr('src', './images/isChecked.png');
+      $('#reCheck02').attr('src', './images/checked.png');
+    }
+  })
+  $('#female').on('click', function(){
+    let check = $(this).is(':checked');
+    console.log('female', check);
+    if(check === true){
+      $('#reCheck02').attr('src', './images/isChecked.png');
+      $('#reCheck01').attr('src', './images/checked.png');
+    }
+  })
+  $('#attention').on('click', function(){
+    let check = $(this).is(':checked');
+    // console.log('check', check);
+    if(check === true){
+      $('#reCheck03').attr('src', './images/isChecked.png');
+    } else {
+      $('#reCheck03').attr('src', './images/checked.png');
+    }
+  })
+  $('#registered').on('click', function(){
+    let check = $(this).is(':checked');
+    // console.log('check', check);
+    if(check === true){
+      $('#reCheck04').attr('src', './images/isChecked.png');
+    } else {
+      $('#reCheck04').attr('src', './images/checked.png');
+    }
+  })
+  $('#login').on('click', function(){
+      window.location = 'home.html';
+  })
 </script>
 </html>

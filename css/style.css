@@ -107,6 +107,14 @@ a:hover {
 .eighteen_logo > img{
 	width: 100%;
 }
+.eighteen_logo2{
+	width: 70%;
+	margin: 0 auto;
+	margin-top: -25px;
+}
+.eighteen_logo2 > img{
+	width: 100%;
+}
 .beerLogo{
 	width: 27%;
 	position: absolute;
@@ -157,7 +165,7 @@ a:hover {
 .icon{
 	display: flex;
 	float: right;
-	margin-top: 15px;
+	margin-top: 12px;
 }
 .icon > a{
 	width: 30px;
@@ -267,6 +275,18 @@ footer{
 }
 .overContain2{
 	width: 90%;
+	margin: 0 auto;
+	padding-top: 95px;
+	padding-bottom: 15vh;
+}
+.overContain3{
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 95px;
+	padding-bottom: 15vh;
+}
+.overContain4{
+	width: 80%;
 	margin: 0 auto;
 	padding-top: 95px;
 	padding-bottom: 15vh;
@@ -462,16 +482,41 @@ input:focus::-webkit-input-placeholder {color: transparent;}
 input:focus {
 	outline: none;
 }
+.loginSub{
+	color: #00712F;
+	font-size: 14px;
+}
+.mgL01{
+	margin: 5px;
+}
 .formLogin{
 	width: 100%;
 	margin-top: 0px;
 	display: block;
 }
+.formSelect{
+	width: 100%;
+	border: 2px solid #00712f;
+	padding: .375rem .3rem;
+	text-align: center;
+}
+.selWidth{
+	width: 30%;
+}
+.selWidth2{
+	width: 20%;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
 .formIpt{
 	display: block;
 	width: 100%;
 	height: calc(1.5em + .75rem + 2px);
-	padding: 1.6rem .75rem;
+	padding: 1.2rem .75rem;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -483,12 +528,25 @@ input:focus {
 }
 .btnGreen{
 	width: 100%;
-	background-color: #00712f;
+	background-color: #005F23;
 	text-align: center;
-	font-size: 20px;
+	font-size: 22px;
 	color: #fff;
-	padding: 10px 0;
+	padding: 5px 0;
 	cursor: pointer;
+}
+.btn-group{
+	position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 .btnFlex{
 	display: flex; 
@@ -518,15 +576,87 @@ input:focus {
 	display: flex;
 }
 .ipt_check{
-	margin-top: .4rem;
-	margin-right: .4rem;
+    box-sizing: border-box;
+	padding: 0;
+	position: relative;
+	z-index: 5;
+	margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+}
+.ipt_check2{
+    box-sizing: border-box;
+	padding: 0;
+	position: relative;
+	z-index: 5;
+	margin-left: 0px;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+	top: 0px;
+    right: 2px;
+    height: 30px;
+    width: 30px;
+    z-index: 0;
+    cursor: pointer;
+}
+.checkmark2{
+	position: absolute;
+	top: 14px;
+    right: 0px;
+    height: 30px;
+    width: 30px;
+    z-index: 0;
+    cursor: pointer;
+}
+.makeCheck{
+	width: 10%;
+}
+.makeLabel{
+	width: 90%;
+}
+.makeLabel label{
+	font-size: 12px;
+	color: #707070;
+}
+.makeLabel label a{
+	color: #0090FF;
+	text-decoration: underline;
 }
 .form_title{
-	width: 60%;
+	width: 40%;
 	margin: 0 auto;
 	text-align: center;
 	color: #00712f;
 	font-size: 30px;
+}
+.form_title img{
+	width: 100%;
+}
+.form_title2{
+	width: 23%;
+	margin: 0 auto;
+	text-align: center;
+	color: #00712f;
+	font-size: 30px;
+}
+.form_title2 img{
+	width: 100%;
+}
+.forgetText{
+	width: 100%;
+	text-align: center;
+	display: block;
+	font-size: 3.5vh;
+	color: #005F23;
+	font-weight: bold;
+	line-height: 38px;
 }
 .mt01{
 	margin: 150px 0;
@@ -575,8 +705,8 @@ input:focus {
 	margin-top: 30px;
 }
 .homeTitle{
-	/* width: 20%; */
-	width: 100%;
+	width: 40%;
+	/* width: 100%; */
 	font-weight: 600;
 	font-size: 30px;
 	color: #00712f;
@@ -586,11 +716,11 @@ input:focus {
 }
 .homeContent{
 	width: 100%;
-	margin: 30px 0;
+	margin: 50px 0 30px 0;
 }
 .homeTag{
 	margin-bottom: 15px;
-	font-size: 16px;
+	font-size: 20px;
 	color: #00712f;
 }
 .homePoint{
@@ -630,7 +760,7 @@ input:focus {
 	background-color: #fff;
 }
 .recordNoData{
-	background-color: rgba(255,255,255,.6);
+	background-color: rgba(255,255,255,.4);
 }
 .recordCard .plus{
 	width: 34px;
@@ -647,6 +777,17 @@ input:focus {
 }
 .historyContent{
 	position: relative;
+}
+.historyTitle{
+	width: 40%;
+	/* width: 100%; */
+	margin: 0 auto;
+	font-weight: 600;
+	font-size: 30px;
+	color: #00712f;
+}
+.historyTitle > img{
+	width: 100%;
 }
 .record_title{
 	width: 100%;
@@ -823,6 +964,24 @@ tr > td{
 	padding:50px 30px 20px 30px;
 	top: 30%;
 }
+.protag_modal{
+	width: 90%;
+	max-width: 500px;
+	margin: 0 auto;
+	background: #fff;
+	position: relative;
+	padding:50px 20px 20px 20px;
+	top: 10%;
+}
+.protag_modal p {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+}
+.protag_content{
+	height: 400px;
+	overflow-y: scroll;
+}
 .ex_title{
 	margin: 0px 0 10px 0;
 	font-size: 22px;
@@ -935,7 +1094,23 @@ tr > td{
     z-index: 0;
     left: 0px;
 	top: 0px;
-	background-color: rgba(0,0,0,.5);
+}
+.iptName{
+	font-size: 20px;
+	color: #005F23;
+	font-weight: 600;
+}
+.allBtn img{
+	width: 100%;
+}
+.relate{
+	position: relative;
+}
+.mr30{
+	margin-right: 30px;
+}
+.mr20{
+	margin-right: 20px;
 }
 @media (max-width: 500px){
 	.axa18Bg{
