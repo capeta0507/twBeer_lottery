@@ -24,16 +24,16 @@ a:hover {
 }
 .myNavbar {
 	width: 100%;
-	background: #008333;
+	background: #00712F;
 	position: fixed;
 	z-index: 111111;
-	padding: 5px 20px;
+	padding: 5px 10px;
 	top: 0;
 	display: flex;
 	justify-content: space-between;
 }
 .logo{
-	width: 90px;
+	width: 70px;
 	display: inline-block;
 	padding: 10px 0;
 }
@@ -51,8 +51,8 @@ a:hover {
 	visibility: visible;
 }
 .bar{
-	width: 10px;
-	height: 10px;
+	width: 8px;
+	height: 8px;
 	display: block;
 	opacity: 1;
 }
@@ -76,8 +76,8 @@ a:hover {
 }
 
 .active .bar2{
-	-webkit-transform: rotate(-128deg) translate(-13px, -11px);
-	transform: rotate(-128deg) translate(-13px, -11px);
+	-webkit-transform: rotate(-128deg) translate(-11px, -9px);
+	transform: rotate(-128deg) translate(-11px, -9px)
 }
 .axaBg{
 	width: 100%;
@@ -88,7 +88,7 @@ a:hover {
 }
 .axa18Bg{
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 	background-image: url(../images/over18/axa.png);
 	background-position: center bottom;
 	background-size: 100%;
@@ -123,7 +123,7 @@ a:hover {
 	height: 100%;
 	padding: 0 20px;
 	position: fixed;
-	top: 72px;
+	top: 64px;
 	z-index: 1000;
 }
 .menu-block-mb .menu li{
@@ -160,8 +160,8 @@ a:hover {
 	margin-top: 15px;
 }
 .icon > a{
-	width: 35px;
-	height: 35px;
+	width: 30px;
+	height: 30px;
 	margin-right: 15px;
 }
 .icon > a > img{
@@ -169,8 +169,8 @@ a:hover {
 }
 footer{
 	width: 100%;
-	height: 8vh;
-	background-color: #008333;
+	height: 12vh;
+	background-color: #00712F;
 	background-image: url(../images/TBeer.png);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -182,6 +182,31 @@ footer{
 	transition: transform .3s ease-out;
 	transition: transform .3s ease-out, -webkit-transform .3s ease-out;
 }
+@media only screen and (max-width: 1919px){
+	footer {
+		background-image: url(../images/TBeer.png);
+		background-size: 98% auto;
+	}
+}
+@media only screen and (max-width: 1200px){
+	footer {
+		background-image: url(../images/TBeer.png);
+		background-size: 98% auto;
+	}
+}
+@media only screen and (max-width: 991px){
+	footer {
+		background-image: url(../images/TBeer.png);
+		background-size: 98% 90%;
+	}
+}
+@media only screen and (max-width: 768px){
+	footer {
+		background-image: url(../images/TBeer.png);
+		background-size: 98% 90%;
+	}
+}
+
 /* index */
 .main_title{
 	width: 100%;
@@ -352,6 +377,9 @@ footer{
 	padding-inline-start: 24px;
 	margin-left: -5px;
 }
+.coll_list5{
+	padding-inline-start: 20px;
+}
 .coll_title{
 	padding: 3px 0 3px 10px;
 	width: 37%;
@@ -418,7 +446,7 @@ footer{
 #goTop{
 	position: fixed;
 	right: -100px;
-	bottom: 70px;
+	bottom: 100px;
 	width: 60px;
 	height: auto;
 	display: block;
@@ -468,6 +496,18 @@ input:focus {
 }
 .btnFlex .btnBlock{
 	width: 45%;
+	cursor: pointer;
+}
+.btnFlex .btnBlock img{
+	width: 100%;
+}
+.btnFlex .btnBlock2{
+	width: 40%;
+	cursor: pointer;
+	margin-top: 5px;
+}
+.btnFlex .btnBlock2 img{
+	width: 100%;
 }
 .form_remake{
 	color: #005F23;
@@ -496,6 +536,22 @@ input:focus {
 }
 .mt03{
 	margin: 30px 0;
+}
+.sendBtn{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.sendBtn > img{
+	width: 100%;
+}
+.linkBtn{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.linkBtn > img{
+	width: 100%;
 }
 /* home */
 .home_logo{
@@ -689,7 +745,206 @@ tr > td{
     top: 50%;
     margin-top: -8%;
 }
+/* 抽獎 */
+.prize{
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.prize > img{
+	width: 100%;
+}
+.prize_result{
+	width: 100%;
+	text-align: center;
+	color: #00712f;
+	font-size: 4vh;
+}
+.prize_result div{
+	font-size: 3vh;
+}
+.prize_title{
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	color: #00712f;
+	font-size: 4vh;
+}
+.prize_title2{
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	color: #00712f;
+	font-size: 6vh;
+}
+.prizeCard{
+	width: 100%;
+	border: 2px solid #008333;
+	position: relative;
+	background-color: rgba(255,255,255,.6);
+	padding: 20px 20px;
+	margin: 50px 0 20px 0;
+	font-weight: 500;
+	font-size: 16px;
+}
+.prizeTag{
+	width: 80px;
+	height: auto;
+	position: absolute;
+	left: -2px;
+	top: -8.5%;
+}
+.prizeTag > img{
+	width: 100%;
+}
+.prizeText{
+	color: #005F23;
+}
+.prizeName{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+.prize_block{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	position: fixed;
+	top: 0;
+	z-index: 112500;
+}
+.prize_modal{
+	width: 90%;
+	max-width: 500px;
+	margin: 0 auto;
+	background: #fff;
+	position: relative;
+	padding:50px 30px 20px 30px;
+	top: 30%;
+}
+.ex_title{
+	margin: 0px 0 10px 0;
+	font-size: 22px;
+	font-weight: bold;
+	color: #000;
+}
+.ex_title span{
+	color: #00712f;
+	font-size: 30px;
+}
+.ex_cont{
+	font-size: 22px;
+	color: #000;
+}
+.welcome_title{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 18px;
+}
+.welcome_title .welTag01{
+	color: #00712f;
+}
+.welcome_title .welTag02{
+	color: #000;
+	margin-top: 20px;
+}
+.exchangePrize{
+	width: 45%;
+	text-align: center;
+	margin-top: 20px;
+}
+.prize_result img{
+	width: 100%;
+}
+.exchangeText{
+	font-size: 16px;
+	color: #000;
+}
+.exchangeText span{
+	color: #00712f;
+	font-size: 30px;
+	font-weight: bold;
+}
+.exBtn{
+	width: 80%;
+	margin: 0 auto;
+	cursor: pointer;
+	margin-top: 20px;
+}
+.exBtn img{
+	width: 100%;
+}
+.listContain{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 45px;
+}
+.closeBtn{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.closeBtn img{
+	width: 100%;
+}
+.list_title,.list_content{
+	width: 100%;
+	display: flex;
+	text-align: center;
+}
+.list_title{
+	font-size: 16px;
+	font-weight: 600;
+	color: #00712f;
+}
+.list_content{
+	margin: 20px 0;
+	font-size: 16px;
+	font-weight: 600;
+}
+.lottery_list{
+	width: 100%;
+	height: 150px;
+	overflow-y: scroll;
+}
+.list_title .list_tag01{
+	width: 16%;
+}
+.list_title .list_tag02{
+	width: 42%;
+}
+.list_title .list_tag03{
+	width: 42%;
+}
+.list_content .list_tag01{
+	width: 17%;
+}
+.list_content .list_tag02{
+	width: 50%;
+}
+.list_content .list_tag03{
+	width: 47%;
+}
+.makeClose{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+    z-index: 0;
+    left: 0px;
+	top: 0px;
+	background-color: rgba(0,0,0,.5);
+}
 @media (max-width: 500px){
+	.axa18Bg{
+		width: 100%;
+		height: 100%;
+		background-image: url(../images/over18/axa.png);
+		background-position: center bottom;
+		background-size: 100%;
+	}
 	.record_title{
 		width: 100%;
 		margin: 0 auto;

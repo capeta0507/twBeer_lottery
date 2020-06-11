@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="./CSS/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="./CSS/slick-theme.css"/>
   <!-- JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
@@ -66,46 +70,42 @@
         </a></li>
       </ul>
     </div>
-    <div class="overContain">
-      <div class="over18_block">
-        <div class="main_title">
-          <div class="eighteen_logo">
-            <img src="./images/18Logo.png" alt="">
+    <div class="contain">
+      <div class="main_title">
+				<div class="homeLogout">
+					<!-- 登出 -->
+					<img src="./images/button/logout.png" alt="">
+				</div>
+			</div>
+			<div class="listContain">
+				<div class="homeTitle" style="text-align: center;">
+					集點兌獎狀況
+				</div>
+				<div class="historyContent historyList" style="display: block;">
+          <div class="input-group btnFlex">
+            <div class="exchangePrize">
+              <div class="prize_result">
+                <img src="./images/prize/prize01.png" alt="">
+              </div>
+              <div class="exchangeText">剩餘 <span id="exchange01">100</span> 組</div>
+            </div>
+            <div class="exchangePrize">
+              <div class="prize_result">
+                <img src="./images/prize/prize01.png" alt="">
+              </div>
+              <div class="exchangeText">剩餘 <span id="exchange02">100</span> 組</div>
+            </div>
           </div>
-        </div>
-        <div class="over18_checked">
-          <label for="overEighteen" class="over18ImgLb">
-            <input id="overEighteen" type="checkbox" style="display: none;">
-            <img id="over18Img" src="./images/over18/18checkFalse.png" alt="">
-          </label>
-        </div>
-        <div class="over18_bear">
-          <img src="./images/over18/18Beer.png" alt="">
-        </div>
-      </div>
+					<div class="mb-3 linkBtn">
+            <img src="./images/button/change.png" alt="">
+          </div>
+				</div>
+			</div>
     </div>
     <footer></footer>
   </div>
 </body>
 <script>
-  $(document).ready(
-    $('#overEighteen').on('click', function(){
-      let check = $(this).is(':checked');
-      // console.log(check)
-      if(check === true){
-        $('#over18Img').attr('src', './images/over18/18checkTrue.png');
-        // 通過驗證, 設定cookie
-        $.cookie('isOver18', 'Yes', {
-          expires: 30
-        });
-        setTimeout(function(){
-          window.location='index.html'
-        }, 1000)
 
-      } else {
-        $('#over18Img').attr('src', './images/over18/18checkFalse.png');
-      }
-    })
-  )
 </script>
 </html>

@@ -66,46 +66,32 @@
         </a></li>
       </ul>
     </div>
-    <div class="overContain">
-      <div class="over18_block">
+    <div class="overContain2">
+      <div class="over18_block2">
         <div class="main_title">
-          <div class="eighteen_logo">
-            <img src="./images/18Logo.png" alt="">
-          </div>
-        </div>
-        <div class="over18_checked">
-          <label for="overEighteen" class="over18ImgLb">
-            <input id="overEighteen" type="checkbox" style="display: none;">
-            <img id="over18Img" src="./images/over18/18checkFalse.png" alt="">
-          </label>
-        </div>
-        <div class="over18_bear">
-          <img src="./images/over18/18Beer.png" alt="">
+          <div class="prize_title">
+						<!-- <img src="./images/18Logo.png" alt=""> -->
+						再接再厲
+					</div>
+					<div class="prize">
+						<img src="./images/noPrize.png" alt="">
+					</div>
+				</div>
+				<div class="input-group">
+					<div class="prize_result">
+						別氣餒，再試一次
+					</div>
+				</div>
+        <div class="mb-3 sendBtn">
+					<!-- <div class="btnGreen">繼續抽</div> -->
+					<img src="./images/button/prizeBtn.png" alt="">
         </div>
       </div>
     </div>
     <footer></footer>
   </div>
 </body>
-<script>
-  $(document).ready(
-    $('#overEighteen').on('click', function(){
-      let check = $(this).is(':checked');
-      // console.log(check)
-      if(check === true){
-        $('#over18Img').attr('src', './images/over18/18checkTrue.png');
-        // 通過驗證, 設定cookie
-        $.cookie('isOver18', 'Yes', {
-          expires: 30
-        });
-        setTimeout(function(){
-          window.location='index.html'
-        }, 1000)
-
-      } else {
-        $('#over18Img').attr('src', './images/over18/18checkFalse.png');
-      }
-    })
-  )
+<script>	
+	
 </script>
 </html>

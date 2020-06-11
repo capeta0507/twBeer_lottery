@@ -16,7 +16,7 @@
   <script src="js/index.js"></script>
 </head>
 <body>
-  <div class="axa18Bg">
+  <div class="axa18Bg_2">
     <div class="myNavbar">
       <div class="menu_container">
         <div class="logo">
@@ -66,46 +66,72 @@
         </a></li>
       </ul>
     </div>
-    <div class="overContain">
-      <div class="over18_block">
+    <div class="overContain2">
+      <div class="over18_block2">
         <div class="main_title">
-          <div class="eighteen_logo">
-            <img src="./images/18Logo.png" alt="">
+          <div class="welcome_title">
+						<div class="welTag01">親愛的 <span>000</span> ，</div>
+						<div class="welTag01">歡迎來到 18天搶鮮開趴趣活動網站！</div>
+						<div class="welTag02">恭喜！您目前有 <span id="myRealPoint">20</span> 點，每2點可抽獎1次</div>
+					</div>
+				</div>
+				<div class="input-group">
+					<div class="prize_result">
+            <img class="prizeName" id="prizeTitle" src="./images/prize/prize01.png" alt="">
+					</div>
+				</div>
+				<div id="takePrize" class="mb-3 sendBtn">
+					<img src="./images/button/takePrizeBtn.png" alt="">
+        </div>
+				<div class="prizeCard">
+          <div class="prizeTag">
+            <img src="./images/prize/prizeTag01.png" alt="">
           </div>
+          <ul class="coll_list5" style="margin-top: 1rem; font-weight: 600;">
+            <li>每集2點即可抽獎一次，有機會抽中 【形影不離雙人折疊椅傘組】、【很會裝購物折車】、【居然剛好三人露營帳】、【想烤就烤烤肉架】，或是最澎拜的【Super set 全品項】6好禮通通帶回家！ </li>
+          </ul>
         </div>
-        <div class="over18_checked">
-          <label for="overEighteen" class="over18ImgLb">
-            <input id="overEighteen" type="checkbox" style="display: none;">
-            <img id="over18Img" src="./images/over18/18checkFalse.png" alt="">
-          </label>
-        </div>
-        <div class="over18_bear">
-          <img src="./images/over18/18Beer.png" alt="">
+        <div class="prizeCard">
+          <div class="prizeTag">
+            <img src="./images/prize/prizeTag02.png" alt="">
+          </div>
+          <ul class="coll_list5" style="margin-top: 1rem; font-weight: 600;">
+            <li>本活動參加者須年滿18歲。</li>
+						<li>每1碼QR code為1點，每1點限用1次，可選擇集點抽獎或集點兌換。</li>
+						<li>中獎者需下載中獎確認函，並於時間內填寫完畢
+							提供至活動小組，確認收到且內容無誤才算完成領獎唷！</li>
+						<li>贈品數量有限抽完為止。</li>
+						<li class="prizeText" style="font-weight: 500;">活動點數需於2020年10月25日前登錄帳戶並使用完畢。</li>
+          </ul>
         </div>
       </div>
     </div>
     <footer></footer>
-  </div>
+	</div>
+	<div id="getPrize" class="prize_block" style="display: none">
+		<div class="prize_modal">
+			<div class="ex_title">您目前有 <span id="myPoint">20</span> 點</div>
+			<p class="ex_cont">是否確認使用2點進行抽獎？</p>
+			<div class="input-group mb-3 btnFlex">
+				<div id="btnYes" class="btnBlock2">
+					<img src="./images/button/yes.png" alt="">
+				</div>
+				<div id="btnNo" class="btnBlock2">
+					<img src="./images/button/no.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 <script>
-  $(document).ready(
-    $('#overEighteen').on('click', function(){
-      let check = $(this).is(':checked');
-      // console.log(check)
-      if(check === true){
-        $('#over18Img').attr('src', './images/over18/18checkTrue.png');
-        // 通過驗證, 設定cookie
-        $.cookie('isOver18', 'Yes', {
-          expires: 30
-        });
-        setTimeout(function(){
-          window.location='index.html'
-        }, 1000)
-
-      } else {
-        $('#over18Img').attr('src', './images/over18/18checkFalse.png');
-      }
-    })
-  )
+	$('#takePrize').on('click', function(){
+		$('#getPrize').show();
+	})	
+	$('#btnYes').on('click', function(){
+		$('#getPrize').hide();
+	});
+	$('#btnNo').on('click', function(){
+		$('#getPrize').hide();
+	});
 </script>
 </html>
