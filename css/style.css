@@ -262,7 +262,7 @@ footer{
 	color: #008333;
 	font-weight: 500;
 }
-.main_title .right a img{
+.main_title .right a > img{
 	width: 100%;
 }
 .contain{
@@ -572,7 +572,7 @@ select {
 	width: 45%;
 	cursor: pointer;
 }
-.btnFlex .btnBlock img{
+.btnFlex .btnBlock > img{
 	width: 100%;
 }
 .btnFlex .btnBlock2{
@@ -580,7 +580,7 @@ select {
 	cursor: pointer;
 	margin-top: 5px;
 }
-.btnFlex .btnBlock2 img{
+.btnFlex .btnBlock2 > img{
 	width: 100%;
 }
 .form_remake{
@@ -652,7 +652,7 @@ select {
 	color: #00712f;
 	font-size: 30px;
 }
-.form_title img{
+.form_title > img{
 	width: 100%;
 }
 .form_title2{
@@ -662,7 +662,7 @@ select {
 	color: #00712f;
 	font-size: 30px;
 }
-.form_title2 img{
+.form_title2 > img{
 	width: 100%;
 }
 .forgetText{
@@ -1064,7 +1064,7 @@ tr > td{
 	text-align: center;
 	margin-top: 21px;
 }
-.prize_result img{
+.prize_result > img{
 	width: 100%;
 }
 .exchangeText{
@@ -1082,7 +1082,7 @@ tr > td{
 	cursor: pointer;
 	margin-top: 20px;
 }
-.exBtn img{
+.exBtn > img{
 	width: 100%;
 }
 .listContain{
@@ -1098,7 +1098,7 @@ tr > td{
 	right: 0;
 	top: 0;
 }
-.closeBtn img{
+.closeBtn > img{
 	width: 100%;
 }
 .list_title,.list_content{
@@ -1152,7 +1152,10 @@ tr > td{
 	color: #005F23;
 	font-weight: 600;
 }
-.allBtn img{
+.allBtn{
+	width: 100%;
+}
+.allBtn > img{
 	width: 100%;
 }
 .relate{
@@ -1181,6 +1184,10 @@ tr > td{
 }
 .col5{
 	margin-left: 20px;
+}
+.point4{
+	text-decoration: underline;
+	color: #026DBF;
 }
 @media (max-width: 500px){
 	.axa18Bg{
