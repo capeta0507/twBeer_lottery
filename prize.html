@@ -49,7 +49,7 @@
         <li><a href="index.html" class="menu-1">
           <img class="menu_dic" src="../images/menu_type.png" alt=""> 首頁
         </a></li>
-        <li><a href="getPrize.html" class="menu-2">
+        <li><a href="prize.html" class="menu-2">
           <img class="menu_dic" src="../images/menu_type.png" alt=""> 我要抽獎
         </a></li>
         <li><a href="exchangePrize.html" class="menu-3">
@@ -72,12 +72,12 @@
           <div class="welcome_title">
 						<div class="welTag01">親愛的 <span>000</span> ，</div>
 						<div class="welTag01">歡迎來到 18天搶鮮開趴趣活動網站！</div>
-						<div class="welTag02">恭喜！您目前有 <span id="myRealPoint">20</span> 點，每2點可抽獎1次</div>
+						<div class="welTag02 text-center">恭喜！您目前有 <span id="myRealPoint">20</span> 點，每2點可抽獎1次</div>
 					</div>
 				</div>
 				<div class="input-group">
 					<div class="prize_result">
-            <img class="prizeName" id="prizeTitle" src="./images/prize/prize01.png" alt="">
+            <img class="prizeName" id="prizeTitle" src="./images/allPrize.png" alt="">
 					</div>
 				</div>
 				<div id="takePrize" class="mb-3 sendBtn">
@@ -128,7 +128,8 @@
 		$('#getPrize').show();
 	})	
 	$('#btnYes').on('click', function(){
-		$('#getPrize').hide();
+    $('#getPrize').hide();
+    location.href = "takePrize.html"
 	});
 	$('#btnNo').on('click', function(){
 		$('#getPrize').hide();

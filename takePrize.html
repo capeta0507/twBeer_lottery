@@ -16,7 +16,7 @@
   <script src="js/index.js"></script>
 </head>
 <body>
-  <div class="axa18Bg">
+  <div class="axa18Bg_2">
     <div class="myNavbar">
       <div class="menu_container">
         <div class="logo">
@@ -49,7 +49,7 @@
         <li><a href="index.html" class="menu-1">
           <img class="menu_dic" src="../images/menu_type.png" alt=""> 首頁
         </a></li>
-        <li><a href="getPrize.html" class="menu-2">
+        <li><a href="prize.html" class="menu-2">
           <img class="menu_dic" src="../images/menu_type.png" alt=""> 我要抽獎
         </a></li>
         <li><a href="exchangePrize.html" class="menu-3">
@@ -66,25 +66,18 @@
         </a></li>
       </ul>
     </div>
-    <div class="overContain2">
+    <div id="discBlock" class="overContain5" style="display: block;">
       <div class="over18_block2">
         <div class="main_title">
-          <div class="prize_title">
-						<!-- <img src="./images/18Logo.png" alt=""> -->
-						再接再厲
-					</div>
-					<div class="prize">
-						<img src="./images/noPrize.png" alt="">
+					<div class="disc">
+						<img id="discPrizeBtnImg" src="./images/game.jpg" alt="">
 					</div>
 				</div>
-				<div class="input-group">
-					<div class="prize_result">
-						別氣餒，再試一次
-					</div>
-				</div>
-        <div class="mb-3 sendBtn">
-					<!-- <div class="btnGreen">繼續抽</div> -->
-					<img src="./images/button/prizeBtn.png" alt="">
+        <div id="discPrizeBtnGo" class="mb-3 discBtn" style="display: block;">
+					<img  src="./images/go.jpg" alt="">
+        </div>
+        <div id="discPrizeBtnStop" class="mb-3 discBtn" style="display: none;">
+					<img src="./images/stop.jpg" alt="">
         </div>
       </div>
     </div>
@@ -92,6 +85,19 @@
   </div>
 </body>
 <script>	
-	
+	$('#discPrizeBtnGo').on('click', function(){
+    $('#discPrizeBtnStop').show();
+    $('#discPrizeBtnGo').hide();
+    $('#discPrizeBtnImg').attr('src', './images/game2.gif');
+  });
+  $('#discPrizeBtnStop').on('click', function(){
+    $('#discPrizeBtnGo').show();
+    $('#discPrizeBtnStop').hide();
+    $('#discPrizeBtnImg').attr('src', './images/game.jpg');
+    location.href = 'getPrize.html'
+  });
+  $('.sendBtn').on('click', function(){
+    window.location.reload();
+  })
 </script>
 </html>

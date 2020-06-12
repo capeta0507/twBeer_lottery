@@ -49,7 +49,7 @@
         <li><a href="index.html" class="menu-1">
           <img class="menu_dic" src="../images/menu_type.png" alt=""> 首頁
         </a></li>
-        <li><a href="getPrize.html" class="menu-2">
+        <li><a href="prize.html" class="menu-2">
           <img class="menu_dic" src="../images/menu_type.png" alt=""> 我要抽獎
         </a></li>
         <li><a href="exchangePrize.html" class="menu-3">
@@ -104,9 +104,9 @@
   </div>
 </body>
 <script>
-  var myAccount = $('#myAccount').val();
-  var myPassword = $('#myPassword').val()
   $('#login').on('click', function(){
+    var myAccount = $('#myAccount').val();
+    var myPassword = $('#myPassword').val();
     if(myAccount === ''){
       alert('請輸入帳號');
     } else if(myPassword === ''){

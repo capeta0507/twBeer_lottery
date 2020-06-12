@@ -49,7 +49,7 @@
         <li><a href="index.html" class="menu-1">
           <img class="menu_dic" src="../images/menu_type.png" alt=""> 首頁
         </a></li>
-        <li><a href="getPrize.html" class="menu-2">
+        <li><a href="prize.html" class="menu-2">
           <img class="menu_dic" src="../images/menu_type.png" alt=""> 我要抽獎
         </a></li>
         <li><a href="exchangePrize.html" class="menu-3">
@@ -66,11 +66,11 @@
         </a></li>
       </ul>
     </div>
-    <div class="overContain2">
+    <!-- 中獎 -->
+    <div id="yesPrize" class="overContain2">
       <div class="over18_block2">
         <div class="main_title">
           <div class="prize_title2">
-						<!-- <img src="./images/18Logo.png" alt=""> -->
 						恭喜你
 					</div>
 					<div class="prize">
@@ -98,7 +98,6 @@
           <div class="prizeText">(紙本以郵戳為憑)</div>
         </div>
         <div class="mb-3 sendBtn">
-					<!-- <div class="btnGreen">繼續抽</div> -->
 					<img src="./images/button/prizeBtn.png" alt="">
         </div>
       </div>
@@ -107,6 +106,8 @@
   </div>
 </body>
 <script>	
-	
+  $('.sendBtn').on('click', function(){
+    location.href = 'takePrize.html'
+  })
 </script>
 </html>

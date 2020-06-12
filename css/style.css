@@ -22,6 +22,9 @@ a:hover {
 	color: #fff;
 	text-decoration: none;
 }
+input[type="tel"]:disabled {
+	background: #E3E3E3;
+}
 .myNavbar {
 	width: 100%;
 	background: #00712F;
@@ -33,7 +36,7 @@ a:hover {
 	justify-content: space-between;
 }
 .logo{
-	width: 70px;
+	width: 100px;
 	display: inline-block;
 	padding: 10px 0;
 }
@@ -71,8 +74,8 @@ a:hover {
 	width: 100%;
 }
 .active .bar1{
-	-webkit-transform: rotate(-50deg) translate(2px, 0px) ;
-	transform: rotate(-50deg) translate(2px, 0px);
+	-webkit-transform: rotate(-48deg) translate(2px, 0px) ;
+	transform: rotate(-48deg) translate(2px, 0px);
 }
 
 .active .bar2{
@@ -131,7 +134,7 @@ a:hover {
 	height: 100%;
 	padding: 0 20px;
 	position: fixed;
-	top: 64px;
+	top: 61px;
 	z-index: 1000;
 }
 .menu-block-mb .menu li{
@@ -178,11 +181,18 @@ a:hover {
 footer{
 	width: 100%;
 	height: 12vh;
+	display: block;
 	background-color: #00712F;
-	background-image: url(../images/TBeer.png);
+	background-image: url(../images/footer_1920.jpg);
 	background-size: 100% auto;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center center;
 	border-top: 1px solid #dcdcdc;
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
 	position: fixed;
 	bottom: 0;
 	z-index: 999;
@@ -192,25 +202,25 @@ footer{
 }
 @media only screen and (max-width: 1919px){
 	footer {
-		background-image: url(../images/TBeer.png);
+		background-image: url(../images/footer_1680.jpg);
 		background-size: 98% auto;
 	}
 }
 @media only screen and (max-width: 1200px){
 	footer {
-		background-image: url(../images/TBeer.png);
+		background-image: url(../images/footer_1140.jpg);
 		background-size: 98% auto;
 	}
 }
 @media only screen and (max-width: 991px){
 	footer {
-		background-image: url(../images/TBeer.png);
+		background-image: url(../images/footer_m.jpg);
 		background-size: 98% 90%;
 	}
 }
 @media only screen and (max-width: 768px){
 	footer {
-		background-image: url(../images/TBeer.png);
+		background-image: url(../images/footer_m.jpg);
 		background-size: 98% 90%;
 	}
 }
@@ -291,6 +301,12 @@ footer{
 	padding-top: 95px;
 	padding-bottom: 15vh;
 }
+.overContain5{
+	width: 30%;
+	margin: 0 auto;
+	padding-top: 70px;
+	padding-bottom: 15vh;
+}
 .over18_block{
 	width: 100%;
 	margin-top: 20px;
@@ -314,7 +330,7 @@ footer{
 	width: 100%;
 }
 .over18_bear{
-	width: 43%;
+	width: 38%;
 	position: relative;
 	bottom: 0;
 	right: 0;
@@ -667,10 +683,14 @@ select {
 .mt03{
 	margin: 30px 0;
 }
+.mt04{
+	margin-top: -3px;
+}
 .sendBtn{
 	width: 80%;
 	margin: 0 auto;
 	margin-top: 50px;
+	cursor: pointer;
 }
 .sendBtn > img{
 	width: 100%;
@@ -679,8 +699,12 @@ select {
 	width: 90%;
 	margin: 0 auto;
 	margin-top: 50px;
+	cursor: pointer;
 }
 .linkBtn > img{
+	width: 100%;
+}
+.linkBtn > a > img{
 	width: 100%;
 }
 /* home */
@@ -703,6 +727,12 @@ select {
 	width: 90%;
 	margin: 0 auto;
 	margin-top: 30px;
+}
+.makeListTitle{
+	width: 100%;
+	font-weight: 600;
+	font-size: 30px;
+	color: #00712f;
 }
 .homeTitle{
 	width: 40%;
@@ -897,7 +927,8 @@ tr > td{
 	width: 100%;
 }
 .prize_result{
-	width: 100%;
+	width: 90%;
+	margin: 0 auto;
 	text-align: center;
 	color: #00712f;
 	font-size: 4vh;
@@ -927,7 +958,7 @@ tr > td{
 	padding: 20px 20px;
 	margin: 50px 0 20px 0;
 	font-weight: 500;
-	font-size: 16px;
+	font-size: 14px;
 }
 .prizeTag{
 	width: 80px;
@@ -1013,6 +1044,26 @@ tr > td{
 	text-align: center;
 	margin-top: 20px;
 }
+.exchangePrize01{
+	width: 56.5%;
+	text-align: center;
+	margin-top: 20px;
+}
+.exchangePrize02{
+	width: 42%;
+	text-align: center;
+	margin-top: 21px;
+}
+.exListPrize01{
+	width: 56%;
+	text-align: center;
+	margin-top: 20px;
+}
+.exListPrize02{
+	width: 44%;
+	text-align: center;
+	margin-top: 21px;
+}
 .prize_result img{
 	width: 100%;
 }
@@ -1026,7 +1077,7 @@ tr > td{
 	font-weight: bold;
 }
 .exBtn{
-	width: 80%;
+	width: 15vh;
 	margin: 0 auto;
 	cursor: pointer;
 	margin-top: 20px;
@@ -1043,6 +1094,7 @@ tr > td{
 	width: 30px;
 	height: 30px;
 	position: absolute;
+	cursor: pointer;
 	right: 0;
 	top: 0;
 }
@@ -1112,6 +1164,24 @@ tr > td{
 .mr20{
 	margin-right: 20px;
 }
+.disc{
+	width: 100%;
+}
+.disc > img{
+	width: 100%;
+}
+.discBtn{
+	width: 50%;
+    margin: 0 auto;
+	margin-top: 50px;
+	cursor: pointer;
+}
+.discBtn img{
+	width: 100%;
+}
+.col5{
+	margin-left: 20px;
+}
 @media (max-width: 500px){
 	.axa18Bg{
 		width: 100%;
@@ -1129,39 +1199,48 @@ tr > td{
 		padding-bottom: 15px;
 		color: #008333;
 	}
+	.overContain5{
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 61px;
+		padding-bottom: 15vh;
+	}
 	/* 兌獎 */
 	.record_tag01{
-		width: 15%;
+		width: 13%;
 	}
 	.record_tag02{
-		width: 18%;
-	}
-	.record_tag03{
 		width: 24%;
 	}
+	.record_tag03{
+		width: 31%;
+	}
 	.record_tag04{
-		width: 19%;
+		width: 10%;
 	}
 	.record_tag05{
-		width: 30%;
+		width: 27%;
 	}
 	/* 積點 */
 	.record_ptag01{
-		width: 15%;
+		width: 11%;
 	}
 	.record_ptag02{
 		width: 30%;
 	}
 	.record_ptag03{
-		width: 30%;
+		width: 23%;
 		/* text-align: left; */
 	}
 	.record_ptag04{
-		width: 15%;
+		width: 21%;
 	}
 	.record_ptag05{
 		width: 15%;
 		/* text-align: right; */
+	}
+	.recYdata{
+		margin-top: 30px;
 	}
 	.cityCent {
 		width: 95%;

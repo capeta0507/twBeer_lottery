@@ -49,7 +49,7 @@
         <li><a href="index.html" class="menu-1">
           <img class="menu_dic" src="../images/menu_type.png" alt=""> 首頁
         </a></li>
-        <li><a href="getPrize.html" class="menu-2">
+        <li><a href="prize.html" class="menu-2">
           <img class="menu_dic" src="../images/menu_type.png" alt=""> 我要抽獎
         </a></li>
         <li><a href="exchangePrize.html" class="menu-3">
@@ -67,30 +67,30 @@
       </ul>
     </div>
     <div class="overContain2">
-      <div class="over18_block2">
+      <div id="excontain" class="over18_block2">
         <div class="main_title">
           <div class="welcome_title">
 						<div class="welTag01">親愛的 <span>000</span> ，</div>
 						<div class="welTag01">歡迎來到 18天搶鮮開趴趣活動網站！</div>
-						<div class="welTag02">您目前有 <span id="myRealPoint">20</span> 點，快來搶鮮兌換好禮！</div>
+						<div class="welTag02 text-center">您目前有 <span id="myRealPoint">20</span> 點，快來搶鮮兌換好禮！</div>
 					</div>
 				</div>
 				<div class="input-group btnFlex">
-					<div class="exchangePrize">
+					<div class="exchangePrize01">
 						<div class="prize_result">
-							<img src="./images/prize/prize01.png" alt="">
+							<img src="./images/exchangePrize01.png" alt="">
 						</div>
 						<div class="exchangeText">剩餘 <span id="exchange01">100</span> 組</div>
-						<div class="takePrize mb-3 exBtn">
+						<div id="takePrize01" class="takePrize mb-3 exBtn">
 							<img src="./images/button/exchange.png" alt="">
 						</div>
 					</div>
-					<div class="exchangePrize">
+					<div class="exchangePrize02">
 						<div class="prize_result">
-							<img src="./images/prize/prize01.png" alt="">
+							<img src="./images/exchangePrize02.png" alt="">
 						</div>
-						<div class="exchangeText">剩餘 <span id="exchange02">100</span> 組</div>
-						<div class="takePrize mb-3 exBtn">
+						<div class="exchangeText mt04">剩餘 <span id="exchange02">100</span> 組</div>
+						<div id="takePrize02" class="takePrize mb-3 exBtn">
 							<img src="./images/button/exchange.png" alt="">
 						</div>
 					</div>
@@ -99,11 +99,11 @@
           <div class="prizeTag">
             <img src="./images/prize/prizeTag03.png" alt="">
           </div>
-          <ul class="coll_list5" style="margin-top: 1rem; font-weight: 600;">
+          <ul class="coll_list5" style="margin-top: 1rem; font-weight: 600;margin-bottom: 0;">
             <li>集到指定點數即可兌換好禮： </li>
 					</ul>
-					<div>累積168點直接兌換【怎麼可以沒有啤酒泡泡機組】1組 </div>
-					<div>累積48點直接兌換【裝時尚手提圓桶袋】 1組 </div>
+					<div class="col5">累積168點直接兌換【怎麼可以沒有啤酒泡泡機組】1組 </div>
+					<div class="col5">累積48點直接兌換【裝時尚手提圓桶袋】 1組 </div>
         </div>
         <div class="prizeCard">
           <div class="prizeTag">
@@ -120,18 +120,92 @@
           </ul>
         </div>
       </div>
+      <div id="exprize01" class="over18_block2" style="display: none;">
+        <div class="main_title">
+          <div class="prize_title2">
+						恭喜您！
+					</div>
+					<div class="prize">
+						<img id="prizeImg" src="./images/prize/prize06.png" alt="">
+					</div>
+				</div>
+				<div class="input-group">
+					<div class="prize_result">
+            <div>成功兌換</div>
+            <img class="prizeName" id="prizeTitle" src="./images/prize/prize06_title.png" alt="">
+            <div style="margin-top: 10px;">乙個</div>
+					</div>
+        </div>
+        <div class="prizeCard">
+          <div class="prizeTag">
+            <img src="./images/prize/prize_list.png" alt="">
+          </div>
+          已發送中獎確認函至註冊電子信箱(同步可於中獎紀錄頁下載) ，請主動下載、完整填寫後，選擇下列任一種方式寄回活動小組：
+          <ol class="coll_list5" style="margin-top: 1rem;">
+            <li>紙本郵件掛號：寄回中獎確認函至「台北市內湖區陽光街321巷56號6樓（18天搶鮮開趴趣活動小組收）」</li>
+            <li>電子郵件：完整填寫(含親筆簽名)後掃描寄回中
+              獎確認函至<span class="prizeText">202018dayscansp@gmail.com</span> </li>
+          </ol>
+          <div class="prizeText">中獎確認函收件截止日： 2020年11月30日止</div>
+          <div class="prizeText">(紙本以郵戳為憑)</div>
+        </div>
+      </div>
+      <div id="exprize02" class="over18_block2" style="display: none;">
+        <div class="main_title">
+          <div class="prize_title2">
+						恭喜您！
+					</div>
+					<div class="prize">
+						<img id="prizeImg" src="./images/prize/prize07.png" alt="">
+					</div>
+				</div>
+				<div class="input-group">
+					<div class="prize_result">
+            <div>成功兌換</div>
+            <img class="prizeName" id="prizeTitle" src="./images/prize/prize07_title.png" alt="">
+            <div style="margin-top: 10px;">乙個</div>
+					</div>
+        </div>
+        <div class="prizeCard">
+          <div class="prizeTag">
+            <img src="./images/prize/prize_list.png" alt="">
+          </div>
+          已發送中獎確認函至註冊電子信箱(同步可於中獎紀錄頁下載) ，請主動下載、完整填寫後，選擇下列任一種方式寄回活動小組：
+          <ol class="coll_list5" style="margin-top: 1rem;">
+            <li>紙本郵件掛號：寄回中獎確認函至「台北市內湖區陽光街321巷56號6樓（18天搶鮮開趴趣活動小組收）」</li>
+            <li>電子郵件：完整填寫(含親筆簽名)後掃描寄回中
+              獎確認函至<span class="prizeText">202018dayscansp@gmail.com</span> </li>
+          </ol>
+          <div class="prizeText">中獎確認函收件截止日： 2020年11月30日止</div>
+          <div class="prizeText">(紙本以郵戳為憑)</div>
+        </div>
+      </div>
     </div>
     <footer></footer>
 	</div>
-	<div id="getPrize" class="prize_block" style="display: none">
+	<div id="getPrize01" class="prize_block" style="display: none">
 		<div class="prize_modal">
 			<div class="ex_title">您目前有 <span id="myPoint">20</span> 點</div>
 			<p class="ex_cont">是否確認使用2點進行兌獎？</p>
 			<div class="input-group mb-3 btnFlex">
-				<div id="btnYes" class="btnBlock2">
+				<div id="btnYes01" class="btnBlock2">
 					<img src="./images/button/yes.png" alt="">
 				</div>
-				<div id="btnNo" class="btnBlock2">
+				<div class="btnBlock2 btnNo">
+					<img src="./images/button/no.png" alt="">
+				</div>
+			</div>
+		</div>
+  </div>
+  <div id="getPrize02" class="prize_block" style="display: none">
+		<div class="prize_modal">
+			<div class="ex_title">您目前有 <span id="myPoint">20</span> 點</div>
+			<p class="ex_cont">是否確認使用2點進行兌獎？</p>
+			<div class="input-group mb-3 btnFlex">
+				<div id="btnYes02" class="btnBlock2">
+					<img src="./images/button/yes.png" alt="">
+				</div>
+				<div class="btnBlock2 btnNo">
 					<img src="./images/button/no.png" alt="">
 				</div>
 			</div>
@@ -139,14 +213,24 @@
 	</div>
 </body>
 <script>
-	$('.takePrize').on('click', function(){
-		$('#getPrize').show();
-	})	
-	$('#btnYes').on('click', function(){
-		$('#getPrize').hide();
+	$('#takePrize01').on('click', function(){
+		$('#getPrize01').show();
+  });
+  $('#takePrize02').on('click', function(){
+		$('#getPrize02').show();
 	});
-	$('#btnNo').on('click', function(){
-		$('#getPrize').hide();
+	$('#btnYes01').on('click', function(){
+    $('.prize_block').hide();
+    $('#excontain').hide();
+    $('#exprize01').show();
+  });
+  $('#btnYes02').on('click', function(){
+    $('.prize_block').hide();
+    $('#excontain').hide();
+    $('#exprize02').show();
+	});
+	$('.btnNo').on('click', function(){
+		$('.prize_block').hide();
 	});
 </script>
 </html>
