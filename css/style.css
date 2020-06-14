@@ -25,6 +25,113 @@ a:hover {
 input[type="tel"]:disabled {
 	background: #E3E3E3;
 }
+.loader{
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loader.hidden{
+	animation: fadeOut 1s;
+	animation-fill-mode: forwards;
+}
+.load_idx{
+	z-index: -10;
+}
+@keyframes fadeOut {
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+.lds-default {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+.lds-default div {
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background: #00712F;
+	border-radius: 50%;
+	animation: lds-default 1.2s linear infinite;
+}
+.lds-default div:nth-child(1) {
+	animation-delay: 0s;
+	top: 37px;
+	left: 66px;
+}
+.lds-default div:nth-child(2) {
+	animation-delay: -0.1s;
+	top: 22px;
+	left: 62px;
+  }
+  .lds-default div:nth-child(3) {
+	animation-delay: -0.2s;
+	top: 11px;
+	left: 52px;
+}
+.lds-default div:nth-child(4) {
+	animation-delay: -0.3s;
+	top: 7px;
+	left: 37px;
+}
+.lds-default div:nth-child(5) {
+	animation-delay: -0.4s;
+	top: 11px;
+	left: 22px;
+}
+.lds-default div:nth-child(6) {
+	animation-delay: -0.5s;
+	top: 22px;
+	left: 11px;
+}
+.lds-default div:nth-child(7) {
+	animation-delay: -0.6s;
+	top: 37px;
+	left: 7px;
+}
+.lds-default div:nth-child(8) {
+	animation-delay: -0.7s;
+	top: 52px;
+	left: 11px;
+}
+.lds-default div:nth-child(9) {
+	animation-delay: -0.8s;
+	top: 62px;
+	left: 22px;
+}
+.lds-default div:nth-child(10) {
+	animation-delay: -0.9s;
+	top: 66px;
+	left: 37px;
+}
+.lds-default div:nth-child(11) {
+	animation-delay: -1s;
+	top: 62px;
+	left: 52px;
+}
+.lds-default div:nth-child(12) {
+	animation-delay: -1.1s;
+	top: 52px;
+	left: 62px;
+}
+@keyframes lds-default {
+	0%, 20%, 80%, 100% {
+	  transform: scale(1);
+	}
+	50% {
+	  transform: scale(1.5);
+	}
+}
 .myNavbar {
 	width: 100%;
 	background: #00712F;
@@ -82,6 +189,20 @@ input[type="tel"]:disabled {
 	-webkit-transform: rotate(-128deg) translate(-11px, -9px);
 	transform: rotate(-128deg) translate(-11px, -9px)
 }
+.idxBg{
+	width: 100%;
+	/* height: 100%; */
+	background-image: url(../images/home/bg_big/bg_big.jpg);
+	background-position: left top;
+	background-size: 100%;
+}
+.idxSecondBg{
+	width: 100%;
+	/* height: 100%; */
+	background-image: url(../images/home/bg_big/cloud_big.jpg);
+	background-position: left top;
+	background-size: 100%;
+}
 .axaBg{
 	width: 100%;
 	/* height: 100%; */
@@ -91,12 +212,18 @@ input[type="tel"]:disabled {
 }
 .axa18Bg{
 	width: 100%;
-	/* height: 100%; */
+	height: 100%;
 	background-image: url(../images/over18/axa.png);
 	background-position: center bottom;
 	background-size: 100%;
 }
 .axa18Bg_2{
+	width: 100%;
+	background-image: url(../images/over18/axa.png);
+	background-position: center bottom;
+	background-size: 100%;
+}
+.axa18Bg_3{
 	width: 100%;
 	background-image: url(../images/over18/axa.png);
 	background-position: center bottom;
@@ -109,6 +236,37 @@ input[type="tel"]:disabled {
 }
 .eighteen_logo > img{
 	width: 100%;
+}
+.ilogo {
+	position: relative;
+	overflow: hidden;
+	transition-duration: 5s;/**动画时间**/
+}
+.ilogo:before {
+	content: "";
+	position: absolute;
+	width: 1000px;
+	height: 100px; /**光标的宽度，可根据实际调整**/
+	background-image: linear-gradient(to bottom,transparent,rgba(255,255,255,.5),transparent);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-animation: searchLights 1.2s ease-in 1s infinite;
+	-o-animation: searchLights 1.2s ease-in 1s infinite;
+	animation: searchLights 1.2s ease-in 1s infinite; /**第一个数字参数控制扫光速度，数字越大越慢**/
+}
+
+@keyframes searchLights {
+	0% {
+		left: -200px;
+		top: -300px;
+	}
+	100% {
+		left: -160px;
+		top: 800px;
+	}
 }
 .eighteen_logo2{
 	width: 70%;
@@ -267,7 +425,7 @@ footer{
 }
 .contain{
 	width: 90%;
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding-top: 90px;
 	padding-bottom: 15vh;
@@ -278,25 +436,25 @@ footer{
 	margin: 0 auto;
 }
 .overContain{
-	width: 90%;
+	width: 25%;
 	margin: 0 auto;
 	padding-top: 95px;
 	/* padding-bottom: 15vh; */
 }
 .overContain2{
-	width: 90%;
+	width: 40%;
 	margin: 0 auto;
 	padding-top: 95px;
 	padding-bottom: 15vh;
 }
 .overContain3{
-	width: 70%;
+	width: 20%;
 	margin: 0 auto;
 	padding-top: 95px;
 	padding-bottom: 15vh;
 }
 .overContain4{
-	width: 80%;
+	width: 30%;
 	margin: 0 auto;
 	padding-top: 95px;
 	padding-bottom: 15vh;
@@ -482,7 +640,7 @@ footer{
 #goTop{
 	position: fixed;
 	right: -100px;
-	bottom: 100px;
+	bottom: 150px;
 	width: 60px;
 	height: auto;
 	display: block;
@@ -824,47 +982,47 @@ select {
 	margin: 0 auto;
 	display: flex;
 	text-align: center;
-	font-size: 12px;
+	font-size: 20px;
 	padding-bottom: 15px;
 	color: #008333;
 }
 /* 兌獎 */
 .record_tag01{
-	width: 15%;
+	width: 11%;
 }
 .record_tag02{
-	width: 18%;
+	width: 30%;
 }
 .record_tag03{
-	width: 24%;
+	width: 36%;
 }
 .record_tag04{
-	width: 19%;
+	width: 10%;
 }
 .record_tag05{
 	width: 30%;
 }
 /* 積點 */
 .record_ptag01{
-	width: 15%;
+	width: 10%;
 }
 .record_ptag02{
-	width: 30%;
+	width: 36%;
 }
 .record_ptag03{
-	width: 30%;
+	width: 21%;
 	/* text-align: left; */
 }
 .record_ptag04{
-	width: 15%;
+	width: 22%;
 }
 .record_ptag05{
-	width: 15%;
+	width: 17%;
 	/* text-align: right; */
 }
 .cityCent {
 	width: 95%;
-	font-size: 12px;
+	font-size: 20px;
 	margin: 0 auto;
 }
 .cityCent > table{
@@ -1189,7 +1347,18 @@ tr > td{
 	text-decoration: underline;
 	color: #026DBF;
 }
-@media (max-width: 500px){
+@media (max-width: 992px){
+	#goTop{
+		position: fixed;
+		right: -100px;
+		bottom: 100px;
+		width: 60px;
+		height: auto;
+		display: block;
+		cursor: pointer;
+		z-index: 10;
+		opacity: 1;
+	}
 	.axa18Bg{
 		width: 100%;
 		height: 100%;
@@ -1205,6 +1374,175 @@ tr > td{
 		font-size: 12px;
 		padding-bottom: 15px;
 		color: #008333;
+	}
+	.overContain{
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 95px;
+		/* padding-bottom: 15vh; */
+	}
+	.overContain2{
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 95px;
+		padding-bottom: 15vh;
+	}
+	.overContain3{
+		width: 70%;
+		margin: 0 auto;
+		padding-top: 95px;
+		padding-bottom: 15vh;
+	}
+	.overContain4{
+		width: 80%;
+		margin: 0 auto;
+		padding-top: 95px;
+		padding-bottom: 15vh;
+	}
+	.overContain5{
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 61px;
+		padding-bottom: 15vh;
+	}
+	/* 兌獎 */
+	.record_tag01{
+		width: 13%;
+	}
+	.record_tag02{
+		width: 24%;
+	}
+	.record_tag03{
+		width: 31%;
+	}
+	.record_tag04{
+		width: 10%;
+	}
+	.record_tag05{
+		width: 27%;
+	}
+	/* 積點 */
+	.record_ptag01{
+		width: 11%;
+	}
+	.record_ptag02{
+		width: 30%;
+	}
+	.record_ptag03{
+		width: 23%;
+		/* text-align: left; */
+	}
+	.record_ptag04{
+		width: 21%;
+	}
+	.record_ptag05{
+		width: 15%;
+		/* text-align: right; */
+	}
+	.recYdata{
+		margin-top: 30px;
+	}
+	.cityCent {
+		width: 95%;
+		font-size: 12px;
+		margin: 0 auto;
+	}
+	.cityCent > table{
+		color: #000;
+		text-align: center;
+		width: 100%;
+		margin: 0px auto;
+		border-collapse: collapse;
+	}
+	.citizen01 table tbody tr td:nth-child(1){
+		width: 5%;
+	}
+	.citizen01 table tbody tr td:nth-child(2){
+		width: 38%;
+	}
+	.citizen01 table tbody tr td:nth-child(3){
+		width: 18%;
+	}
+	.citizen01 table tbody tr td:nth-child(4){
+		width: 26%;
+	}
+	.citizen01 table tbody tr td:nth-child(5){
+		width: 10%;
+	}
+	.citizen02 table tbody tr td:nth-child(1){
+		width: 5%;
+	}
+	.citizen02 table tbody tr td:nth-child(2){
+		width: 28%;
+	}
+	.citizen02 table tbody tr td:nth-child(3){
+		width: 25%;
+	}
+	.citizen02 table tbody tr td:nth-child(4){
+		width: 10%;
+	}
+	.citizen02 table tbody tr td:nth-child(5){
+		width: 20%;
+	}
+}
+@media (max-width: 500px){
+	#goTop{
+		position: fixed;
+		right: -100px;
+		bottom: 100px;
+		width: 60px;
+		height: auto;
+		display: block;
+		cursor: pointer;
+		z-index: 10;
+		opacity: 1;
+	}
+	.axa18Bg{
+		width: 100%;
+		height: 100%;
+		background-image: url(../images/over18/axa.png);
+		background-position: center bottom;
+		background-size: 100%;
+	}
+	.axa18Bg_3{
+		width: 100%;
+		height: 100%;
+		background-image: url(../images/over18/axa.png);
+		background-position: center bottom;
+		background-size: 100%;
+	}
+	.record_title{
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		text-align: center;
+		font-size: 12px;
+		padding-bottom: 15px;
+		color: #008333;
+	}
+	.overContain{
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 95px;
+		/* padding-bottom: 15vh; */
+	}
+	.overContain2{
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 95px;
+		padding-bottom: 15vh;
+	}
+	.overContain3{
+		width: 70%;
+		margin: 0 auto;
+		padding-top: 95px;
+		padding-bottom: 15vh;
+	}
+	.overContain4{
+		width: 80%;
+		margin: 0 auto;
+		padding-top: 95px;
+		padding-bottom: 15vh;
 	}
 	.overContain5{
 		width: 100%;
