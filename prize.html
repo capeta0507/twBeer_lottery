@@ -16,6 +16,9 @@
   <script src="js/index.js"></script>
 </head>
 <body>
+  <div class="loader">
+    <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> 
+  </div>
   <div class="axa18Bg_2">
     <div class="myNavbar">
       <div class="menu_container">
@@ -83,7 +86,7 @@
 				<div id="takePrize" class="mb-3 sendBtn">
 					<img src="./images/button/takePrizeBtn.png" alt="">
         </div>
-				<div class="prizeCard">
+				<div class="prizeCard prizeText02">
           <div class="prizeTag">
             <img src="./images/prize/prizeTag01.png" alt="">
           </div>
@@ -91,7 +94,7 @@
             <li>每集2點即可抽獎一次，有機會抽中 【形影不離雙人折疊椅傘組】、【很會裝購物折疊車】、【居然剛好三人露營帳】、【想烤就烤烤肉架】，或是最澎拜的【SUPER SET 全品項】6好禮通通帶回家！ </li>
           </ul>
         </div>
-        <div class="prizeCard">
+        <div class="prizeCard prizeText02">
           <div class="prizeTag">
             <img src="./images/prize/prizeTag02.png" alt="">
           </div>
@@ -124,6 +127,12 @@
 	</div>
 </body>
 <script>
+  window.addEventListener("load", function(){
+    const loader = document.querySelector('.loader');
+    setTimeout(function(){
+      loader.className += ' hidden' // class "loader hidden"
+    },1000);
+  })
 	$('#takePrize').on('click', function(){
 		$('#getPrize').show();
 	})	

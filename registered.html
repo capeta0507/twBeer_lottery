@@ -76,18 +76,18 @@
         <div class="formLogin">
           <div class="input-group mb-3">
             <div class="iptName">真實姓名：</div>
-            <input type="text" name="name" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+            <input id="myName" type="text" name="name" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
           </div>
           <div class="input-group mb-3">
             <div class="iptName">性別：</div>
             <div class="flex relate mr30">
               <label class="iptName" for="male">男</label>
-              <input class="ipt_check reCheck_1" name="gender" type="radio" id="male">
+              <input class="ipt_check reCheck_1" name="gender" type="radio" id="male" value="male">
               <img id="reCheck01" class="checkmark" src="./images/checked.png" alt="">
             </div>
             <div class="flex relate mr30">
               <label class="iptName" for="female">女</label>
-              <input class="ipt_check reCheck_2" name="gender" type="radio" id="female">
+              <input class="ipt_check reCheck_2" name="gender" type="radio" id="female" value="female">
               <img id="reCheck02" class="checkmark" src="./images/checked.png" alt="">
 						</div>
 					</div>
@@ -113,15 +113,15 @@
           </div>
           <div class="input-group mb-3">
             <div class="iptName">手機號碼：</div>
-            <input type="tel" maxlength="10" name="cellphone_number" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+            <input id="myTel" type="tel" maxlength="10" name="cellphone_number" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
           </div>
 					<div class="input-group mb-3">
             <div class="iptName">電子信箱：</div>
-            <input type="email" name="name" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+            <input id="myEmail" type="email" name="name" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
 					</div>
 					<div class="input-group mb-3">
             <div class="iptName">獎品寄送住址：</div>
-            <input type="text" name="place" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+            <input id="myPlace" type="text" name="place" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
 					</div>
 					<div class="input-group mb-3">
 						<div class="form_remake" style="display: flex;">
@@ -131,11 +131,11 @@
 					</div>
 					<div class="input-group mb-3">
             <div class="iptName">帳號:(自動設定為手機號碼)</div>
-            <input type="tel" maxlength="10" name="account_number" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1" disabled>
+            <input id="myAccount" type="tel" maxlength="10" name="account_number" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1" disabled>
 					</div>
 					<div class="input-group">
             <div class="iptName">自訂密碼</div>
-            <input type="password" maxlength="10" name="password" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+            <input id="myPassword" type="password" maxlength="10" name="password" class="formIpt" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
           </div>
           <div class="input-group mb-3">
 						<div class="form_remake">
@@ -500,6 +500,15 @@
   let reTwphone = /^[09]{2}[0-9]{8}$/;
   let emailRule = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;
   $('#myRegistered').on('click', function(){
+    var myName = $('#myName').val();
+    var myEmail = $('#myEmail').val();
+    var myTel = $('#myTel').val();
+    var myPlace = $('#myPlace').val();
+    var myPassword = $('#myName').val();
+    var genderCheck = $(':radio:checked');
+    var gender = $('.genderCheck:radio[name=gender]:checked').val();
+    var check01 = document.getElementById('reCheck03');
+    var check02 = document.getElementById('reCheck04');
     // 計算年齡
     var now = new Date();
     var nowYear = now.getFullYear();
@@ -508,29 +517,48 @@
     var myBirthYear = $('#myYear').val();
     var myBirthMonth = $('#myMonth').val();
     var myBirthDate = $('#myDate').val();
-    console.log('now', nowYear, nowMonth, nowDay);
-    console.log(myBirthYear, myBirthMonth, myBirthDate);
+    // console.log('now', nowYear, nowMonth, nowDay);
+    // console.log(myBirthYear, myBirthMonth, myBirthDate);
     var yearDiff = nowYear - myBirthYear;
-    alert(yearDiff);
-    if(yearDiff < 18){
+    // alert(yearDiff);
+    if(myName === ''){
+      alert('請輸入您的真實姓名')
+    } else if(myEmail === ''){
+      alert('請輸入您的email')
+    } else if(myEmail.search(emailRule)){
+      alert('您的email格式有誤');
+    } else if(myTel === ''){
+      alert('請輸入您的手機號碼');
+    } else if(!reTwphone.test(myTel)){
+      alert('您的手機號碼格式有誤');
+    } else if(myPlace === ''){
+      alert('請輸入您的地址');
+    } else if(myPassword === ''){
+      alert('請設定密碼');
+    } else if(myPassword === ''){
+      alert('請設定密碼');
+    } else if(yearDiff < 18){
       // 未滿18歲
-      alert('未滿18歲');
+      alert('須年滿18歲才能參加唷！');
     } else if(yearDiff === 18){
       if(nowMonth - myBirthMonth < 0){
         // 未滿18歲
-        alert('未滿18歲');
+        alert('須年滿18歲才能參加唷！');
       } else if(nowMonth - myBirthMonth == 0){
         if(nowDay - myBirthDate < 0){
           // 未滿18歲
-          alert('未滿18歲');
+          alert('須年滿18歲才能參加唷！');
         } else if(nowDay - myBirthDate >= 0){
           // 滿18歲
-          alert('已滿18歲');
+          // alert('已滿18歲');
         }
       }
     } else if(yearDiff > 18){
       // 滿18歲
-      alert('已滿18歲');
+      // alert('已滿18歲');
+      window.location = './home.html';
+    } else {
+      window.location = './home.html';
     }
   })
 </script>

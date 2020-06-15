@@ -258,13 +258,11 @@ input[type="tel"]:disabled {
 	overflow: hidden;
 	transition-duration: 5s;/**动画时间**/
 }
-.ilogo:before {
+/* .ilogo:before {
 	position: absolute;
 	display: block;
 	top: 0;
 	left: 0;
-	/* top: -50px;
-	left: -140px; */
 	content: "";
 	height: 20px;
 	width: 160px;
@@ -279,7 +277,7 @@ input[type="tel"]:disabled {
 			animation-timing-function: cubic-beizer(0.17, 0.79, 0.96, 0.25);
 	-webkit-animation-iteration-count: infinite;
 			animation-iteration-count: infinite;
-}
+} */
 
 @-webkit-keyframes shine {
 	0% {
@@ -608,6 +606,10 @@ footer{
 }
 .coll_list5{
 	padding-inline-start: 20px;
+}
+.coll_list6{
+	padding-inline-start: 24px;
+	color: #000;
 }
 .coll_title{
 	padding: 3px 0 3px 10px;
@@ -1182,6 +1184,9 @@ tr > td{
 	margin: 50px 0 20px 0;
 	font-weight: bold;
 	font-size: 14px;
+}
+.prizeText02{
+	font-size: 13px !important;
 }
 .postmark{
 	width: 90%;

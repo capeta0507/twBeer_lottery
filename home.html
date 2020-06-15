@@ -20,6 +20,9 @@
   <script src="js/index.js"></script>
 </head>
 <body>
+  <div class="loader">
+    <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> 
+  </div>
   <div class="axa18Bg_2">
     <div class="myNavbar">
       <div class="menu_container">
@@ -115,6 +118,11 @@
   </div>
 </body>
 <script>
-
+  window.addEventListener("load", function(){
+      const loader = document.querySelector('.loader');
+      setTimeout(function(){
+        loader.className += ' hidden' // class "loader hidden"
+      },1000);
+  })
 </script>
 </html>
