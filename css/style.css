@@ -189,6 +189,20 @@ input[type="tel"]:disabled {
 	-webkit-transform: rotate(-128deg) translate(-11px, -9px);
 	transform: rotate(-128deg) translate(-11px, -9px)
 }
+@keyframes idxSecond {
+	0% {
+		/* background-position-x: 100%; */
+		right: 1%;
+	}
+	50% {
+		/* background-position-x: 90%; */
+		right: 3%;
+	}
+	100% {
+		/* background-position-x: 100%; */
+		right: 1%;
+	}
+}
 .idxBg{
 	width: 100%;
 	/* height: 100%; */
@@ -197,11 +211,17 @@ input[type="tel"]:disabled {
 	background-size: 100%;
 }
 .idxSecondBg{
-	width: 100%;
-	/* height: 100%; */
-	background-image: url(../images/home/bg_big/cloud_big.jpg);
-	background-position: left top;
-	background-size: 100%;
+    width: 100%;
+    height: 22%;
+    position: absolute;
+    top: 17%;
+    background-image: url(../images/home/bg_big/cloud.png);
+	background-position-x: 100%;
+	background-position-y: bottom;
+    background-repeat: no-repeat;
+	background-size: 80%;
+	right: 1%;
+	animation: idxSecond 3s infinite ease-in-out;
 }
 .axaBg{
 	width: 100%;
@@ -850,6 +870,9 @@ select {
 	margin-top: 50px;
 	cursor: pointer;
 }
+.sendBtn > a > img{
+	width: 100%;
+}
 .sendBtn > img{
 	width: 100%;
 }
@@ -1153,6 +1176,117 @@ tr > td{
 	padding:50px 30px 20px 30px;
 	top: 30%;
 }
+/* 抽獎獎品 */
+.prizeImg01{
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.prizeImg01 > img{
+	width: 100%;
+}
+.prizeImg02{
+	width: 55%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.prizeImg02 > img{
+	width: 100%;
+}
+.prizeImg03{
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.prizeImg03 > img{
+	width: 100%;
+}
+.prizeImg04{
+	width: 65%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.prizeImg04 > img{
+	width: 100%;
+}
+.prizeImg05{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.prizeImg05 > img{
+	width: 100%;
+}
+.prize_result01{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	color: #00712f;
+	font-size: 4vh;
+}
+.prize_result01 div{
+	font-size: 3vh;
+}
+.prize_result01 > img{
+	width: 100%;
+}
+.prize_result02{
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	color: #00712f;
+	font-size: 4vh;
+}
+.prize_result02 div{
+	font-size: 3vh;
+}
+.prize_result02 > img{
+	width: 100%;
+}
+.prize_result03{
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	color: #00712f;
+	font-size: 4vh;
+}
+.prize_result03 div{
+	font-size: 3vh;
+}
+.prize_result03 > img{
+	width: 100%;
+}
+.prize_result04{
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	color: #00712f;
+	font-size: 4vh;
+}
+.prize_result04 div{
+	font-size: 3vh;
+}
+.prize_result04 > img{
+	width: 100%;
+}
+.prize_result05{
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	color: #00712f;
+	font-size: 4vh;
+}
+.prize_result05 div{
+	font-size: 3vh;
+}
+.prize_result05 > img{
+	width: 100%;
+}
 .protag_modal{
 	width: 90%;
 	max-width: 500px;
@@ -1347,6 +1481,25 @@ tr > td{
 	text-decoration: underline;
 	color: #026DBF;
 }
+.light{
+	position: absolute;
+	z-index: 10;
+	background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: all 1s;
+    top: 50%;
+    left: 50%;
+	margin-top: -23%;
+    margin-left: -1%;
+	background: -webkit-radial-gradient(circle,white,transparent);
+	background: -o-radial-gradient(circle,white,transparent);
+	background: -moz-radial-gradient(circle,white,transparent);
+	background: radial-gradient(circle,#fff 3px,transparent );
+	opacity: 0;
+	/* transform: scale3d(10, 10, 2); */
+}
 @media (max-width: 992px){
 	#goTop{
 		position: fixed;
@@ -1358,6 +1511,17 @@ tr > td{
 		cursor: pointer;
 		z-index: 10;
 		opacity: 1;
+	}
+	.idxSecondBg{
+		width: 100%;
+		height: 22%;
+		position: absolute;
+		top: 17%;
+		background-image: url(../images/home/bg_big/cloud.png);
+		background-position-x: 100%;
+		background-position-y: bottom;
+		background-repeat: no-repeat;
+		background-size: 80%;
 	}
 	.axa18Bg{
 		width: 100%;
@@ -1401,6 +1565,7 @@ tr > td{
 	}
 	.overContain5{
 		width: 100%;
+		position: relative;
 		margin: 0 auto;
 		padding-top: 61px;
 		padding-bottom: 15vh;
@@ -1496,6 +1661,17 @@ tr > td{
 		cursor: pointer;
 		z-index: 10;
 		opacity: 1;
+	}
+	.idxSecondBg{
+		width: 100%;
+		height: 22%;
+		position: absolute;
+		top: 8%;
+		background-image: url(../images/home/bg_big/cloud.png);
+		background-position-x: 100%;
+		background-position-y: bottom;
+		background-repeat: no-repeat;
+		background-size: 80%;
 	}
 	.axa18Bg{
 		width: 100%;

@@ -67,6 +67,7 @@
       </ul>
     </div>
     <div id="discBlock" class="overContain5" style="display: block;">
+      <div class="light"></div>
       <div class="over18_block2">
         <div class="main_title">
 					<div class="disc">
@@ -94,10 +95,21 @@
     $('#discPrizeBtnGo').show();
     $('#discPrizeBtnStop').hide();
     $('#discPrizeBtnImg').attr('src', './images/game.jpg');
-    location.href = 'getPrize.html'
+    $('.light').css({
+      'opacity' : '1',
+    })
+    setTimeout(function(){
+      $('.light').css({
+        '-webkit-transform': 'scale3d(150, 150, 2)',
+        '-moz-transform': 'scale3d(150, 150, 2)',
+        '-ms-transform': 'scale3d(150, 150, 2)',
+        '-o-transform': 'scale3d(150, 150, 2)',
+        'transform': 'scale3d(150, 150, 2)'
+      })
+    },200)
+    setTimeout(function(){
+      location.href = './getPrizes/getPrize01.html'
+    },1000);
   });
-  $('.sendBtn').on('click', function(){
-    window.location.reload();
-  })
 </script>
 </html>
