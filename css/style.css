@@ -191,16 +191,13 @@ input[type="tel"]:disabled {
 }
 @keyframes idxSecond {
 	0% {
-		/* background-position-x: 100%; */
-		right: 1%;
+		background-position-x: 100%;
 	}
 	50% {
-		/* background-position-x: 90%; */
-		right: 3%;
+		background-position-x: 90%;
 	}
 	100% {
-		/* background-position-x: 100%; */
-		right: 1%;
+		background-position-x: 100%;
 	}
 }
 .idxBg{
@@ -252,7 +249,7 @@ input[type="tel"]:disabled {
 .eighteen_logo{
 	width: 60%;
 	margin: 0 auto;
-	margin-top: -25px;
+	margin-top: 0px;
 }
 .eighteen_logo > img{
 	width: 100%;
@@ -418,12 +415,12 @@ footer{
 .main_title .left .linkText{
 	font-size: 18px;
 	color: #008333;
-	font-weight: 500;
+	font-weight: 600;
 	text-decoration: underline;
 }
 .main_title .left .subText{
 	color: #008333;
-	font-weight: 500;
+	font-weight: 600;
 }
 .main_title .right{
 	width: 20%;
@@ -438,14 +435,14 @@ footer{
 .main_title .subText{
 	font-size: 18px;
 	color: #008333;
-	font-weight: 500;
+	font-weight: 600;
 }
 .main_title .right a > img{
 	width: 100%;
 }
 .contain{
 	width: 90%;
-	max-width: 1000px;
+	max-width: 450px;
 	margin: 0 auto;
 	padding-top: 90px;
 	padding-bottom: 15vh;
@@ -456,7 +453,8 @@ footer{
 	margin: 0 auto;
 }
 .overContain{
-	width: 25%;
+	width: 50%;
+	max-width: 450px;
 	margin: 0 auto;
 	padding-top: 95px;
 	/* padding-bottom: 15vh; */
@@ -581,6 +579,7 @@ footer{
 }
 .coll_list2{
 	padding-inline-start: 24px;
+	color: #000;
 }
 .coll_list3{
 	padding-inline-start: 24px;
@@ -589,6 +588,7 @@ footer{
 }
 .coll_list4{
 	padding-inline-start: 24px;
+	color: #000;
 	margin-left: -5px;
 }
 .coll_list5{
@@ -660,7 +660,7 @@ footer{
 #goTop{
 	position: fixed;
 	right: -100px;
-	bottom: 150px;
+	bottom: 14vh;
 	width: 60px;
 	height: auto;
 	display: block;
@@ -765,6 +765,13 @@ select {
 	color: #005F23;
 	font-size: 14px;
 	font-weight: 500;
+	margin-left: 6px;
+}
+.mRemake{
+	width: 5%;
+}
+.sRemake{
+	width: 95%;
 }
 .flex{
 	display: flex;
@@ -932,6 +939,10 @@ select {
 .homeTag{
 	margin-bottom: 15px;
 	font-size: 20px;
+	font-weight: 600;
+	color: #00712f;
+}
+.homeTag span{
 	color: #00712f;
 }
 .homePoint{
@@ -971,7 +982,7 @@ select {
 	background-color: #fff;
 }
 .recordNoData{
-	background-color: rgba(255,255,255,.4);
+	background-color: #fff;
 }
 .recordCard .plus{
 	width: 34px;
@@ -979,7 +990,7 @@ select {
 	background-color: #008333;
 	position: absolute;
 	top: -2px;
-	right: -2px;
+	right: 0px;
 	text-align: center;
 	color: #fff;
 }
@@ -1005,47 +1016,47 @@ select {
 	margin: 0 auto;
 	display: flex;
 	text-align: center;
-	font-size: 20px;
+	font-size: 14px;
 	padding-bottom: 15px;
 	color: #008333;
 }
 /* 兌獎 */
 .record_tag01{
-	width: 11%;
+	width: 13%;
 }
 .record_tag02{
-	width: 30%;
+	width: 24%;
 }
 .record_tag03{
-	width: 36%;
+	width: 31%;
 }
 .record_tag04{
 	width: 10%;
 }
 .record_tag05{
-	width: 30%;
+	width: 27%;
 }
 /* 積點 */
 .record_ptag01{
-	width: 10%;
+	width: 11%;
 }
 .record_ptag02{
-	width: 36%;
+	width: 30%;
 }
 .record_ptag03{
-	width: 21%;
+	width: 23%;
 	/* text-align: left; */
 }
 .record_ptag04{
-	width: 22%;
+	width: 21%;
 }
 .record_ptag05{
-	width: 17%;
+	width: 15%;
 	/* text-align: right; */
 }
 .cityCent {
 	width: 95%;
-	font-size: 20px;
+	font-size: 14px;
 	margin: 0 auto;
 }
 .cityCent > table{
@@ -1138,8 +1149,12 @@ tr > td{
 	background-color: rgba(255,255,255,.6);
 	padding: 20px 20px;
 	margin: 50px 0 20px 0;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 14px;
+}
+.postmark{
+	width: 268px;
+	text-align: right;
 }
 .prizeTag{
 	width: 80px;
@@ -1326,10 +1341,15 @@ tr > td{
 }
 .welcome_title .welTag01{
 	color: #00712f;
+	font-weight: 600;
 }
 .welcome_title .welTag02{
 	color: #000;
 	margin-top: 20px;
+}
+.myRealPoint{
+	color: #00712f;
+	font-weight: 600;
 }
 .exchangePrize{
 	width: 45%;
@@ -1435,7 +1455,7 @@ tr > td{
 	width: 100%;
 	height: 100%;
 	position: fixed;
-    z-index: 0;
+    z-index: -1;
     left: 0px;
 	top: 0px;
 }
@@ -1476,6 +1496,7 @@ tr > td{
 }
 .col5{
 	margin-left: 20px;
+	font-weight: 600;
 }
 .point4{
 	text-decoration: underline;
@@ -1504,7 +1525,7 @@ tr > td{
 	#goTop{
 		position: fixed;
 		right: -100px;
-		bottom: 100px;
+		bottom: 14vh;
 		width: 60px;
 		height: auto;
 		display: block;
@@ -1536,8 +1557,12 @@ tr > td{
 		display: flex;
 		text-align: center;
 		font-size: 12px;
+		font-weight: 600;
 		padding-bottom: 15px;
 		color: #008333;
+	}
+	.getcity01{
+		font-weight: 600;
 	}
 	.overContain{
 		width: 90%;
@@ -1654,13 +1679,18 @@ tr > td{
 	#goTop{
 		position: fixed;
 		right: -100px;
-		bottom: 100px;
+		bottom: 14vh;
 		width: 60px;
 		height: auto;
 		display: block;
 		cursor: pointer;
 		z-index: 10;
 		opacity: 1;
+	}
+	.eighteen_logo{
+		width: 60%;
+		margin: 0 auto;
+		margin-top: -25px;
 	}
 	.idxSecondBg{
 		width: 100%;

@@ -7,13 +7,13 @@
   <!-- CSS only -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <!-- JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src="js/index.js"></script>
+  <script src="../js/index.js"></script>
 </head>
 <body>
   <div class="axa18Bg_2">
@@ -21,23 +21,23 @@
       <div class="menu_container">
         <div class="logo">
           <a href="https://www.twbeer.com.tw/over18" target="_blank">
-            <img src="images/TBlogo.png" alt="">
+            <img src="../images/TBlogo.png" alt="">
           </a>
         </div>
         <div class="icon">
           <a href="">
-            <img src="images/ig.png" alt="">
+            <img src="../images/ig.png" alt="">
           </a>
           <a href="">
-            <img src="images/fb.png" alt="">
+            <img src="../images/fb.png" alt="">
           </a>
           <a class="menu-m">
             <div class="hamBar">
               <div class="bar bar1 transition">
-                <img class="" src="./images/bar.png" alt="">
+                <img class="" src="../images/bar.png" alt="">
               </div>
               <div class="bar bar2 transition">
-                <img class="" src="./images/bar.png" alt="">
+                <img class="" src="../images/bar.png" alt="">
               </div>
             </div>
           </a>
@@ -46,47 +46,46 @@
     </div>
     <div class="menu-block-mb">
       <ul class="menu">
-        <li><a href="index.html" class="menu-1">
-          <img class="menu_dic" src="./images/menu_type.png" alt=""> 首頁
+        <li><a href="../index.html" class="menu-1">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 首頁
         </a></li>
-        <li><a href="prize.html" class="menu-2">
-          <img class="menu_dic" src="./images/menu_type.png" alt=""> 我要抽獎
+        <li><a href="../prize.html" class="menu-2">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 我要抽獎
         </a></li>
-        <li><a href="exchangePrize.html" class="menu-3">
-          <img class="menu_dic" src="./images/menu_type.png" alt=""> 我要兌換
+        <li><a href="../exchangePrize.html" class="menu-3">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 我要兌換
         </a></li>
-        <li><a href="home.html" class="menu-4">
-          <img class="menu_dic" src="./images/menu_type.png" alt=""> 我的帳號
+        <li><a href="../home.html" class="menu-4">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 我的帳號
         </a></li>
-        <li><a href="exchange.html" class="menu-5">
-          <img class="menu_dic" src="./images/menu_type.png" alt=""> 集點兌獎狀況
+        <li><a href="../exchange.html" class="menu-5">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 集點兌獎狀況
         </a></li>
-        <li><a href="lottery.html" class="menu-6">
-          <img class="menu_dic" src="./images/menu_type.png" alt=""> 抽獎得獎名單
+        <li><a href="../lottery.html" class="menu-6">
+          <img class="menu_dic" src="../images/menu_type.png" alt=""> 抽獎得獎名單
         </a></li>
       </ul>
     </div>
-    <!-- 中獎 -->
-    <div id="yesPrize" class="overContain2">
-      <div class="over18_block2">
+    <div class="overContain2">
+      <div id="exprize01" class="over18_block2">
         <div class="main_title">
           <div class="prize_title2">
-						恭喜你
+						恭喜您！
 					</div>
 					<div class="prize">
-						<img id="prizeImg" src="./images/prize/prize01.png" alt="">
+						<img id="prizeImg" src="../images/prize/prize06.png" alt="">
 					</div>
 				</div>
 				<div class="input-group">
-					<div class="prize_result">
-            <div>抽中</div>
-            <img class="prizeName" id="prizeTitle" src="./images/prize/prize01_title.png" alt="">
+					<div class="prize_result01">
+            <div>成功兌換</div>
+            <img class="prizeName" id="prizeTitle" src="../images/prize/prize06_title.png" alt="">
             <div style="margin-top: 10px;">乙個</div>
 					</div>
         </div>
         <div class="prizeCard">
           <div class="prizeTag">
-            <img src="./images/prize/prize_list.png" alt="">
+            <img src="../images/prize/prize_list.png" alt="">
           </div>
           已發送中獎確認函至註冊電子信箱(同步可於中獎紀錄頁下載) ，請主動下載、完整填寫後，選擇下列任一種方式寄回活動小組：
           <ol class="coll_list5" style="margin-top: 1rem;">
@@ -97,17 +96,12 @@
           <div class="prizeText">中獎確認函收件截止日： 2020年11月30日止</div>
           <div class="prizeText postmark">(紙本以郵戳為憑)</div>
         </div>
-        <div class="mb-3 sendBtn">
-					<img src="./images/button/prizeBtn.png" alt="">
-        </div>
       </div>
     </div>
     <footer></footer>
-  </div>
+	</div>
 </body>
-<script>	
-  $('.sendBtn').on('click', function(){
-    location.href = 'takePrize.html'
-  })
+<script>
+
 </script>
 </html>
