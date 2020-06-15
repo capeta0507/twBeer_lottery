@@ -260,31 +260,48 @@ input[type="tel"]:disabled {
 	transition-duration: 5s;/**动画时间**/
 }
 .ilogo:before {
-	content: "";
 	position: absolute;
-	width: 1000px;
-	height: 100px; /**光标的宽度，可根据实际调整**/
-	background-image: linear-gradient(to bottom,transparent,rgba(255,255,255,.5),transparent);
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	-webkit-animation: searchLights 1.2s ease-in 1s infinite;
-	-o-animation: searchLights 1.2s ease-in 1s infinite;
-	animation: searchLights 1.2s ease-in 1s infinite; /**第一个数字参数控制扫光速度，数字越大越慢**/
+	display: block;
+	top: 0;
+	left: 0;
+	/* top: -50px;
+	left: -140px; */
+	content: "";
+	height: 20px;
+	width: 160px;
+	background: rgba(255, 255, 255, 0.7);
+	-webkit-transform: rotate(-40deg);
+			transform: rotate(-40deg);
+	-webkit-animation-name: shine;
+			animation-name: shine;
+	-webkit-animation-duration: 2s;
+			animation-duration: 2s;
+	-webkit-animation-timing-function: cubic-beizer(0.17, 0.79, 0.96, 0.25);
+			animation-timing-function: cubic-beizer(0.17, 0.79, 0.96, 0.25);
+	-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
 }
 
-@keyframes searchLights {
+@-webkit-keyframes shine {
 	0% {
-		left: -200px;
-		top: -300px;
+	  top: -120px;
+	  left: -280px;
 	}
 	100% {
-		left: -160px;
-		top: 800px;
+	  top: 110%;
+	  left: 100%;
 	}
-}
+  }
+  @keyframes shine {
+	0% {
+	  top: -120px;
+	  left: -280px;
+	}
+	100% {
+	  top: 110%;
+	  left: 100%;
+	}
+  }
 .eighteen_logo2{
 	width: 70%;
 	margin: 0 auto;
@@ -485,7 +502,7 @@ footer{
 }
 .over18_block{
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 0px;
 }
 .over18_block2{
 	width: 100%;
@@ -495,7 +512,7 @@ footer{
 .over18_checked{
 	width: 50%;
 	margin: 0 auto;
-	margin-top: 15px;
+	margin-top: 5px;
 	display: block;
 	position: relative;
 }
@@ -507,7 +524,6 @@ footer{
 }
 .over18_bear{
 	width: 38%;
-	position: relative;
 	bottom: 0;
 	right: 0;
 	float: right;
@@ -569,7 +585,7 @@ footer{
 	width: 100%;
 }
 .coll_text{
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 500;
 	line-height: 30px;
 }
@@ -679,6 +695,7 @@ input:focus {
 .loginSub{
 	color: #00712F;
 	font-size: 14px;
+	margin-left: 6px;
 }
 .mgL01{
 	margin: 5px;
@@ -691,6 +708,7 @@ input:focus {
 .formSelect{
 	width: 100%;
 	border: 2px solid #00712f;
+	background-color: #fff;
 	padding: .375rem .3rem;
 	text-align: center;
 }
@@ -984,6 +1002,20 @@ select {
 .recordNoData{
 	background-color: #fff;
 }
+.historyContent .plus{
+	width: 34px;
+	height: 34px;
+	background-color: #008333;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 5;
+	text-align: center;
+	color: #fff;
+}
+.historyContent .plus > img{
+	width: 100%;
+}
 .recordCard .plus{
 	width: 34px;
 	height: 34px;
@@ -1149,11 +1181,11 @@ tr > td{
 	background-color: rgba(255,255,255,.6);
 	padding: 20px 20px;
 	margin: 50px 0 20px 0;
-	font-weight: 600;
+	font-weight: bold;
 	font-size: 14px;
 }
 .postmark{
-	width: 268px;
+	width: 90%;
 	text-align: right;
 }
 .prizeTag{
@@ -1350,6 +1382,7 @@ tr > td{
 .myRealPoint{
 	color: #00712f;
 	font-weight: 600;
+	font-size: 30px;
 }
 .exchangePrize{
 	width: 45%;
@@ -1533,6 +1566,13 @@ tr > td{
 		z-index: 10;
 		opacity: 1;
 	}
+	.over18_bear{
+		width: 32%;
+		position: absolute;
+		bottom: 12%;
+		right: 5%;
+		/* margin: 0 auto; */
+	}
 	.idxSecondBg{
 		width: 100%;
 		height: 22%;
@@ -1688,7 +1728,7 @@ tr > td{
 		opacity: 1;
 	}
 	.eighteen_logo{
-		width: 60%;
+		width: 55%;
 		margin: 0 auto;
 		margin-top: -25px;
 	}
@@ -1696,7 +1736,7 @@ tr > td{
 		width: 100%;
 		height: 22%;
 		position: absolute;
-		top: 8%;
+		top: 10%;
 		background-image: url(../images/home/bg_big/cloud.png);
 		background-position-x: 100%;
 		background-position-y: bottom;
