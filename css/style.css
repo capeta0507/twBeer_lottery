@@ -202,7 +202,7 @@ input[type="tel"]:disabled {
 .idxBg{
 	width: 100%;
 	/* height: 100%; */
-	background-image: url(../images/home/bg_big/bg_big.jpg);
+	background-image: url(../images/home/bg_big/bg_big2.jpg);
 	background-position: left top;
 	background-size: 100%;
 }
@@ -1761,6 +1761,12 @@ tr > td{
 		z-index: 10;
 		opacity: 1;
 	}
+	.idxBg{
+		width: 100%;
+		background-image: url(../images/home/bg_big/bg_big2.jpg);
+		background-position: left top;
+		background-size: 100%;
+	}
 	.eighteen_logoidx{
 		width: 55%;
 		margin: 0 auto;
@@ -1929,5 +1935,13 @@ tr > td{
 	}
 	.citizen02 table tbody tr td:nth-child(5){
 		width: 20%;
+	}
+}
+@media (max-width: 400px){
+	.idxBg{
+		width: 100%;
+		background-image: url(../images/home/bg_big/bg_big3.jpg);
+		background-position: left top;
+		background-size: cover;
 	}
 }
