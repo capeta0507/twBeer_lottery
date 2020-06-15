@@ -15,7 +15,6 @@ body {
     font-family: 'Noto Sans TC', '思源黑體', sans-serif;
 }
 a {
-	color: #fff;
 	text-decoration: none;
 }
 a:hover {
@@ -432,12 +431,12 @@ footer{
 .main_title .left .linkText{
 	font-size: 18px;
 	color: #008333;
-	font-weight: 600;
+	font-weight: bolder;
 	text-decoration: underline;
 }
 .main_title .left .subText{
 	color: #008333;
-	font-weight: 600;
+	font-weight: bolder;
 }
 .main_title .right{
 	width: 20%;
@@ -452,7 +451,7 @@ footer{
 .main_title .subText{
 	font-size: 18px;
 	color: #008333;
-	font-weight: 600;
+	font-weight: bolder;
 }
 .main_title .right a > img{
 	width: 100%;
@@ -936,14 +935,14 @@ select {
 }
 .makeListTitle{
 	width: 100%;
-	font-weight: 600;
+	font-weight: bolder;
 	font-size: 30px;
 	color: #00712f;
 }
 .homeTitle{
 	width: 40%;
 	/* width: 100%; */
-	font-weight: 600;
+	font-weight: bolder;
 	font-size: 30px;
 	color: #00712f;
 }
@@ -957,7 +956,7 @@ select {
 .homeTag{
 	margin-bottom: 15px;
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: bolder;
 	color: #00712f;
 }
 .homeTag span{
@@ -1036,7 +1035,7 @@ select {
 	width: 40%;
 	/* width: 100%; */
 	margin: 0 auto;
-	font-weight: 600;
+	font-weight: bolder;
 	font-size: 30px;
 	color: #00712f;
 }
@@ -1346,7 +1345,7 @@ tr > td{
 .protag_modal p {
 	text-align: center;
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: bolder;
 }
 .protag_content{
 	height: 400px;
@@ -1373,7 +1372,7 @@ tr > td{
 }
 .welcome_title .welTag01{
 	color: #00712f;
-	font-weight: 600;
+	font-weight: bolder;
 }
 .welcome_title .welTag02{
 	color: #000;
@@ -1381,8 +1380,8 @@ tr > td{
 }
 .myRealPoint{
 	color: #00712f;
-	font-weight: 600;
-	font-size: 30px;
+	font-weight: bolder;
+	font-size: 26px;
 }
 .exchangePrize{
 	width: 45%;
@@ -1453,13 +1452,13 @@ tr > td{
 }
 .list_title{
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: bolder;
 	color: #00712f;
 }
 .list_content{
 	margin: 20px 0;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: bolder;
 }
 .lottery_list{
 	width: 100%;
@@ -1495,7 +1494,7 @@ tr > td{
 .iptName{
 	font-size: 20px;
 	color: #005F23;
-	font-weight: 600;
+	font-weight: bolder;
 }
 .allBtn{
 	width: 100%;
@@ -1529,7 +1528,7 @@ tr > td{
 }
 .col5{
 	margin-left: 20px;
-	font-weight: 600;
+	font-weight: bolder;
 }
 .point4{
 	text-decoration: underline;
@@ -1597,12 +1596,12 @@ tr > td{
 		display: flex;
 		text-align: center;
 		font-size: 12px;
-		font-weight: 600;
+		font-weight: bolder;
 		padding-bottom: 15px;
 		color: #008333;
 	}
 	.getcity01{
-		font-weight: 600;
+		font-weight: bolder;
 	}
 	.overContain{
 		width: 90%;
