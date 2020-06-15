@@ -45,6 +45,7 @@
       </div>
     </div>
     <div class="menu-block-mb">
+      <div class="menuBg"></div>
       <ul class="menu">
         <li><a href="index.html" class="menu-1">
           <img class="menu_dic" src="./images/menu_type.png" alt=""> 首頁
@@ -68,7 +69,7 @@
     </div>
     <div class="overContain">
       <div class="over18_block">
-        <div class="main_title">
+        <div class="main_title" style="display: block;">
           <div class="eighteen_logo ilogo">
             <img src="./images/18Logo.png" alt="">
           </div>
@@ -107,5 +108,8 @@
       }
     })
   )
+  setTimeout(function(){
+    $('.eighteen_logo').addClass('eighteen_logoHad');
+  },1500)
 </script>
 </html>

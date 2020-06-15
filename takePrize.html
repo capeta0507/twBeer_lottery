@@ -16,6 +16,9 @@
   <script src="js/index.js"></script>
 </head>
 <body>
+  <div class="loader">
+    <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> 
+  </div>
   <div class="axa18Bg_2">
     <div class="myNavbar">
       <div class="menu_container">
@@ -45,6 +48,7 @@
       </div>
     </div>
     <div class="menu-block-mb">
+      <div class="menuBg"></div>
       <ul class="menu">
         <li><a href="index.html" class="menu-1">
           <img class="menu_dic" src="./images/menu_type.png" alt=""> 首頁
@@ -86,6 +90,12 @@
   </div>
 </body>
 <script>	
+  window.addEventListener("load", function(){
+    const loader = document.querySelector('.loader');
+    setTimeout(function(){
+      loader.className += ' hidden' // class "loader hidden"
+    },1000);
+  })
 	$('#discPrizeBtnGo').on('click', function(){
     $('#discPrizeBtnStop').show();
     $('#discPrizeBtnGo').hide();
