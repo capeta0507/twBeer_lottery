@@ -514,12 +514,14 @@ footer{
 }
 .overContain2{
 	width: 40%;
+	/* max-width: 450px; */
 	margin: 0 auto;
 	padding-top: 95px;
 	padding-bottom: 15vh;
 }
 .overContain3{
 	width: 20%;
+	/* max-width: 450px; */
 	margin: 0 auto;
 	padding-top: 95px;
 	padding-bottom: 15vh;
@@ -660,7 +662,7 @@ ul,ol{
 	margin-top: 10px;
 }
 .col_list_title{
-	margin-left: 2px;
+	margin-left: 10px;
 	margin-bottom: 5px;
 }
 .coll_contain{
