@@ -440,7 +440,7 @@ footer{
 @media only screen and (max-width: 768px){
 	footer {
 		background-image: url(../images/footer_m.jpg);
-		background-size: 98% 90%;
+		background-size: 100% 60%;
 	}
 }
 
@@ -611,24 +611,27 @@ footer{
 .actCard .actTitle > img{
 	width: 100%;
 }
+ul,ol{
+	margin-bottom: 0;
+}
 .coll_text{
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 500;
-	line-height: 30px;
+	line-height: 20px;
 }
 .coll_list{
-	margin-left: -11px;
+	margin-left: -22px;
 }
 .coll_list2{
-	margin-left: -15px;
+	margin-left: -20px;
 	color: #000;
 }
 .coll_list3{
-	margin-left: -16px;
+	margin-left: -20px;
 	margin-block-end: 0;
 }
 .coll_list4{
-	margin-left: -22px;
+	margin-left: -24px;
 	color: #000;
 }
 .coll_list5{
@@ -642,13 +645,14 @@ footer{
 	padding: 3px 0 3px 10px;
 	display: inline-block;
     width: auto;
-	font-size: 20px;
+	font-size: 16px;
 	background-color: #008333;
 	color: #FDD000;
 	margin-top: 10px;
 }
 .col_list_title{
-	margin-left: 22px;
+	margin-left: 2px;
+	margin-bottom: 5px;
 }
 .coll_contain{
 	margin-top: 5px;
@@ -656,6 +660,12 @@ footer{
 }
 .sqlist{
 	list-style-type: none;
+	margin-left: -26px !important;
+}
+.udLink{
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
 }
 .sqlist li{
   color: #9db60b;
