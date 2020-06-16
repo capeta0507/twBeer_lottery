@@ -652,6 +652,9 @@ ul,ol{
 	margin-left: -16px;
 	color: #000;
 }
+.coll_list7{
+	margin-left: -28px;
+}
 .coll_title{
 	padding: 3px 0 3px 10px;
 	display: inline-block;
@@ -1126,14 +1129,14 @@ select {
 	width: 11%;
 }
 .record_ptag02{
-	width: 30%;
+	width: 23%;
 }
 .record_ptag03{
-	width: 23%;
+	width: 24%;
 	/* text-align: left; */
 }
 .record_ptag04{
-	width: 21%;
+	width: 27%;
 }
 .record_ptag05{
 	width: 15%;
@@ -1155,7 +1158,7 @@ select {
 	width: 5%;
 }
 .citizen01 table tbody tr td:nth-child(2){
-	width: 38%;
+	width: 25%;
 }
 .citizen01 table tbody tr td:nth-child(3){
 	width: 18%;
@@ -1584,7 +1587,7 @@ tr > td{
 	width: 100%;
 }
 .col5{
-	margin-left: 20px;
+	margin-left: 11px;
 	font-weight: bolder;
 }
 .point4{
@@ -1712,14 +1715,14 @@ tr > td{
 		width: 11%;
 	}
 	.record_ptag02{
-		width: 30%;
+		width: 23%;
 	}
 	.record_ptag03{
-		width: 23%;
+		width: 24%;
 		/* text-align: left; */
 	}
 	.record_ptag04{
-		width: 21%;
+		width: 27%;
 	}
 	.record_ptag05{
 		width: 15%;
@@ -1744,7 +1747,7 @@ tr > td{
 		width: 5%;
 	}
 	.citizen01 table tbody tr td:nth-child(2){
-		width: 38%;
+		width: 25%;
 	}
 	.citizen01 table tbody tr td:nth-child(3){
 		width: 18%;
@@ -1904,18 +1907,18 @@ tr > td{
 		width: 11%;
 	}
 	.record_ptag02{
-		width: 30%;
+		width: 21%;
 	}
 	.record_ptag03{
-		width: 23%;
+		width: 25%;
 		/* text-align: left; */
 	}
 	.record_ptag04{
-		width: 21%;
+		width: 24%;
 	}
 	.record_ptag05{
-		width: 15%;
-		/* text-align: right; */
+		width: 14%;
+		text-align: right;
 	}
 	.recYdata{
 		margin-top: 30px;
@@ -1936,7 +1939,7 @@ tr > td{
 		width: 5%;
 	}
 	.citizen01 table tbody tr td:nth-child(2){
-		width: 38%;
+		width: 22%;
 	}
 	.citizen01 table tbody tr td:nth-child(3){
 		width: 18%;
