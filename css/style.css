@@ -617,37 +617,38 @@ footer{
 	line-height: 30px;
 }
 .coll_list{
-	padding-inline-start: 24px;
-	margin-left: 5px;
+	margin-left: -11px;
 }
 .coll_list2{
-	padding-inline-start: 24px;
+	margin-left: -15px;
 	color: #000;
 }
 .coll_list3{
-	padding-inline-start: 24px;
-	margin-left: 0;
+	margin-left: -16px;
 	margin-block-end: 0;
 }
 .coll_list4{
-	padding-inline-start: 24px;
+	margin-left: -22px;
 	color: #000;
-	margin-left: -5px;
 }
 .coll_list5{
-	padding-inline-start: 20px;
+	margin-left: -11px;
 }
 .coll_list6{
-	padding-inline-start: 24px;
+	margin-left: -16px;
 	color: #000;
 }
 .coll_title{
 	padding: 3px 0 3px 10px;
-	width: 116px;
+	display: inline-block;
+    width: auto;
 	font-size: 20px;
 	background-color: #008333;
 	color: #FDD000;
 	margin-top: 10px;
+}
+.col_list_title{
+	margin-left: 22px;
 }
 .coll_contain{
 	margin-top: 5px;
