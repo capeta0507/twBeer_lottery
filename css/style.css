@@ -166,28 +166,37 @@ input[type="tel"]:disabled {
 	opacity: 1;
 }
 .bar1{
-	-webkit-transform: rotate(60deg) translate(12px, -37px);
-	transform: rotate(60deg) translate(12px, -37px);
+	-webkit-transform: rotate(60deg) translate(5px, -37px);
+	transform: rotate(60deg) translate(5px, -37px);
 }
 .bar2{
-	-webkit-transform: rotate(60deg) translate(18px, -36px);
-	transform: rotate(60deg) translate(18px, -36px);
+	-webkit-transform: rotate(60deg) translate(10px, -35px);
+	transform: rotate(60deg) translate(10px, -35px);
+}
+.bar3{
+	-webkit-transform: rotate(60deg) translate(15px, -33px);
+	transform: rotate(60deg) translate(15px, -33px);
 }
 .transition{
-	transition: 0.4s;
+	transition: 0.2s;
 }
 .bar > img{
 	width: 100%;
 }
-.active .bar1{
+/* .active .bar1{
 	-webkit-transform: rotate(-48deg) translate(2px, 0px) ;
-	transform: rotate(-48deg) translate(2px, 0px);
+	transform: rotate(-48deg) translate(4px, 0px);
 }
 
 .active .bar2{
-	-webkit-transform: rotate(-128deg) translate(-11px, -9px);
-	transform: rotate(-128deg) translate(-11px, -9px)
+	-webkit-transform: rotate(50deg) translate(11px, -30px);
+	transform: rotate(50deg) translate(11px, -30px);
+	opacity: 0;
 }
+.active .bar3{
+	-webkit-transform: rotate(50deg) translate(5px, -36px);
+	transform: rotate(50deg) translate(5px, -36px);
+} */
 @keyframes idxSecond {
 	0% {
 		background-position-x: 100%;
