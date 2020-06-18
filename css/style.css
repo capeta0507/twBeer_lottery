@@ -21,7 +21,7 @@ a:hover {
 	color: blue;
 	text-decoration: none;
 }
-input[type="tel"]:disabled {
+input[type="text"]:disabled {
 	background: #E3E3E3;
 }
 .loader{

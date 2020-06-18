@@ -231,6 +231,7 @@
   });
 	// select option
 	const yearOptions = [
+    // { value: '2003', label: '2003'},
     { value: '2002', label: '2002'},
     { value: '2001', label: '2001'},
     { value: '2000', label: '2000'},
@@ -497,70 +498,55 @@
     var nowMonth = now.getMonth()+1;
     var nowDay = now.getDate();
     var myBirthYear = $('#myYear').val();
-    var myBirthMonth = parseInt($('#myMonth').val());
-    var myBirthDate = parseInt($('#myDate').val());
+    var myBirthMonth = $('#myMonth').val();
+    var myBirthDate = $('#myDate').val();
     var yearDiff = nowYear - myBirthYear;
-    // console.log('myBirthMonth', myBirthMonth);
-    // console.log( 'nowMonth', nowMonth);
-    // 資料驗證
-    if(myName.trim() === ''){
-      alert('請輸入您的真實姓名');
-      return false;
-    }
-    if(genderCheck.length === 0){
+    console.log('now', nowDay - myBirthDate);
+    console.log(nowYear - myBirthYear, 'yearDiff')
+    if(myName === ''){
+      alert('請輸入您的真實姓名')
+    } else if(genderCheck.length === 0){
       alert('請勾選性別');
-      return false;
-    }
-    if(yearDiff < 18){
+    } else if(nowYear - myBirthYear < 18){
+      // 未滿18歲
       alert('須年滿18歲才能參加唷！');
-      return false ;
-    }
-    if(yearDiff === 18 && nowMonth < myBirthMonth){
-      alert('須年滿18歲才能參加唷！');
-      return false ;
-    }
-    if(yearDiff === 18 && nowMonth === myBirthMonth && nowDay < myBirthDate){
-      alert('須年滿18歲才能參加唷！');
-      return false ;
-    }
-    if(myTel.trim() === ''){
+    } else if(nowYear - myBirthYear === 18){
+      alert('年：已滿18歲')
+      if(nowMonth - myBirthMonth < 0){
+        // 未滿18歲
+        alert('須年滿18歲才能參加唷！');
+      } else if(nowMonth - myBirthMonth === 0){
+        alert('月：已滿18歲')
+        if(nowDay - myBirthDate < 0){
+          // 未滿18歲
+          alert('須年滿18歲才能參加唷！');
+        } else {
+          // 滿18歲
+          alert('已滿18歲');
+        }
+      }
+    } else if(myTel === ''){
       alert('請輸入您的手機號碼');
-      return false;
-    }
-    if(!reTwphone.test(myTel)){
+    } else if(!reTwphone.test(myTel)){
       alert('您的手機號碼格式有誤');
-      return false;
-    }
-    if(myEmail.trim() === ''){
-      alert('請輸入您的email');
-      return false;
-    }
-    if(myEmail.search(emailRule)){
+    } else if(myEmail === ''){
+      alert('請輸入您的email')
+    } else if(myEmail.search(emailRule)){
       alert('您的email格式有誤');
-      return false;
-    }
-    if(myPlace.trim() === ''){
+    } else if(myPlace === ''){
       alert('請輸入您的地址');
-      return false;
-    }
-    if(myPassword.trim() === ''){
+    } else if(myPassword === ''){
       alert('請設定密碼');
-      return false;
-    }
-    if(myPassword.length < 6){
-      alert('請設定6～10位密碼');
-      return false;
-    }
-    if(attention === false){
+    } else if(myPassword.length < 6){
+      alert('請設定6～10位英數混合密碼');
+    } else if(attention === false){
       alert('請勾選我已閱讀詳細資料');
-      return false;
-    }
-    if(registered === false){
+    } else if(registered === false){
       alert('請勾選確認註冊資料皆為正確');
-      return false;
+    } else {
+      alert('您的註冊已完成')
+      window.location = 'home.html';
     }
-    alert('註冊完成')
-    window.location = 'home.html';
-  });
+  })
 </script>
 </html>
