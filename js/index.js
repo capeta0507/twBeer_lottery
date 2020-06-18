@@ -4,7 +4,6 @@ $(function(){
     $(this).toggleClass("active");
     let active = $(this).attr('class')
     active = active.split(' ')[1]
-    console.log(active)
     if(active){
       $('.bar1').css( 'transform','rotate(60deg) translate(16px, -32px)');
       $('.bar2').css( 'transform','rotate(60deg) translate(10px, -35px)');
