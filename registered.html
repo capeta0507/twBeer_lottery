@@ -86,12 +86,12 @@
             <div class="iptName">性別：</div>
             <div class="flex relate mr30">
               <label class="iptName" for="male">男</label>
-              <input class="ipt_check reCheck_1" name="gender" type="radio" id="male" value="male">
+              <input class="ipt_check reCheck_1" name="gender" type="radio" id="male" value="男">
               <img id="reCheck01" class="checkmark" src="./images/checked.png" alt="">
             </div>
             <div class="flex relate mr30">
               <label class="iptName" for="female">女</label>
-              <input class="ipt_check reCheck_2" name="gender" type="radio" id="female" value="female">
+              <input class="ipt_check reCheck_2" name="gender" type="radio" id="female" value="女">
               <img id="reCheck02" class="checkmark" src="./images/checked.png" alt="">
 						</div>
 					</div>
@@ -431,7 +431,8 @@
     var myPlace = $('#myPlace').val();
     var myPassword = $('#myPassword').val();
     var genderCheck = $(':radio:checked');
-    var gender = $('.genderCheck:radio[name=gender]:checked').val();
+    // 獲取獲取性別
+    var gender = $('input[name=gender]:checked').val();
     var attention = document.getElementById('attention').checked
     var registered = document.getElementById('registered').checked
     console.log('gender', gender)
