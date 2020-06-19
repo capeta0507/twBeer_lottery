@@ -121,7 +121,7 @@
   })
   // let reTwphone = /^[09]{2}[0-9]{8}$/;
   let reTwphone = /^(09)[0-9]{8}$/;
-  let rePassword = /^([a-zA-Z]+\d+|\d+[a-zA-Z]+)[a-zA-Z0-9]*$/;
+  let rePassword = /^[a-zA-Z0-9]*$/;
   $('#login').on('click', function(){
     var myAccount = $('#myAccount').val();
     var myPassword = $('#myPassword').val();
@@ -137,12 +137,8 @@
       alert('您輸入的電話號碼格式有誤');
       return false;
     }
-    if(myPassword.length < 6){
-      alert('密碼限定為6～10位英數混合');
-      return false;
-    }
-    if(!rePassword.test(myPassword)){
-      alert('密碼限定為6～10位英數混合');
+    if(myPassword.length < 6 || !rePassword.test(myPassword)){
+      alert('密碼限定為6～10位，可英數混合');
       return false;
     }
     window.location = 'home.html'
