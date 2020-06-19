@@ -119,7 +119,9 @@
       loader.className += ' hidden' // class "loader hidden"
     },1000);
   })
-  let reTwphone = /^[09]{2}[0-9]{8}$/;
+  // let reTwphone = /^[09]{2}[0-9]{8}$/;
+  let reTwphone = /^(09)[0-9]{8}$/
+  let rePassword = /^([a-zA-Z]+\d+|\d+[a-zA-Z]+)[a-zA-Z0-9]*$/;
   $('#login').on('click', function(){
     var myAccount = $('#myAccount').val();
     var myPassword = $('#myPassword').val();
@@ -134,8 +136,13 @@
     if(!reTwphone.test(myAccount)){
       alert('您輸入的電話號碼格式有誤');
       return false;
-    } if(myPassword.length < 6){
-      alert('密碼長度限定為6～10位數');
+    }
+    if(myPassword.length < 6){
+      alert('密碼限定為6～10位英數混合');
+      return false;
+    }
+    if(!rePassword.test(myPassword)){
+      alert('密碼限定為6～10位英數混合');
       return false;
     }
     window.location = 'home.html'

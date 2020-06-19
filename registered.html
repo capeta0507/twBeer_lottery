@@ -420,8 +420,10 @@
       $('#reCheck04').attr('src', './images/checked.png');
     }
   })
-  let reTwphone = /^[09]{2}[0-9]{8}$/;
+  // let reTwphone = /^[09]{2}[0-9]{8}$/;
+  let reTwphone = /^(09)[0-9]{8}$/
   let emailRule = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;
+  let rePassword = /^([a-zA-Z]+\d+|\d+[a-zA-Z]+)[a-zA-Z0-9]*$/;
   $('#myRegistered').on('click', function(){
     var myName = $('#myName').val();
     var myEmail = $('#myEmail').val();
@@ -432,7 +434,7 @@
     var gender = $('.genderCheck:radio[name=gender]:checked').val();
     var attention = document.getElementById('attention').checked
     var registered = document.getElementById('registered').checked
-    // console.log('genderCheck', genderCheck.length)
+    console.log('gender', gender)
     // 計算年齡
     var now = new Date();
     var nowYear = now.getFullYear();
@@ -489,8 +491,8 @@
       alert('請設定密碼');
       return false;
     }
-    if(myPassword.length < 6){
-      alert('請設定6～10位密碼');
+    if(!rePassword.test(myPassword)){
+      alert('請設定6～10位英數混合密碼');
       return false;
     }
     if(attention === false){
