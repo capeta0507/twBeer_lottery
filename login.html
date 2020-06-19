@@ -93,7 +93,7 @@
             *&nbsp;&nbsp;密碼長度限定為6～10位數，<br>
             &nbsp;&nbsp;&nbsp;&nbsp;可以混合使用英文字母及數字
           </div>
-          <div id="login" class="input-group mb-3">
+          <div id="login" class="input-group mb-3" style="cursor: pointer;">
             <div class="allBtn">
               <img src="./images/button/loginBtn.png" alt="">
             </div>
@@ -123,17 +123,22 @@
   $('#login').on('click', function(){
     var myAccount = $('#myAccount').val();
     var myPassword = $('#myPassword').val();
-    if(myAccount === ''){
+    if(myAccount.trim() === ''){
       alert('請輸入帳號');
-    } else if(myPassword === ''){
-      alert('請輸入密碼');
-    } else if(!reTwphone.test(myAccount)){
-      alert('您輸入的電話號碼格式有誤');
-    } else if(myPassword.length < 6){
-      alert('密碼長度限定為6～10位數');
-    } else {
-      window.location = 'home.html'
+      return false;
     }
+    if(myPassword.trim() === ''){
+      alert('請輸入密碼');
+      return false;
+    }
+    if(!reTwphone.test(myAccount)){
+      alert('您輸入的電話號碼格式有誤');
+      return false;
+    } if(myPassword.length < 6){
+      alert('密碼長度限定為6～10位數');
+      return false;
+    }
+    window.location = 'home.html'
   })
 </script>
 </html>
