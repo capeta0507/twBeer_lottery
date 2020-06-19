@@ -345,6 +345,7 @@
   // 年份修改
   function changeYear() {
     $("#myMonth").val('01'); // 月份 = 01
+    $("#myDate").html('');
     for(let x=0;x<31;x++){
 		  $("#myDate").append(`<option value=${day31[x].value}>${day31[x].label}</option>`);
     }
@@ -372,6 +373,7 @@
       }
     }
     // alert('change month ' + thisMonth + " day " + thisDay);
+    $("#myDate").html('');
     for(let x=0;x<thisDay;x++){
 		  $("#myDate").append(`<option value=${day31[x].value}>${day31[x].label}</option>`);
     } 
