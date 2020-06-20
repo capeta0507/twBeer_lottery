@@ -378,9 +378,11 @@
 		  $("#myDate").append(`<option value=${day31[x].value}>${day31[x].label}</option>`);
     } 
   }
-
-	for(let x=0;x<yearOptions.length;x++){
-		$("#myYear").append(`<option value=${yearOptions[x].value}>${yearOptions[x].label}</option>`);
+	// 年份寫入
+	const yeraStart = '1920';
+	const yearEnd = '2002';
+	for(let x=yearEnd;x>yeraStart-1;x--){
+		$("#myYear").append(`<option value=${x}>${x}</option>`);
 	} 
 	for(let x=0;x<monthOptions.length;x++){
 		$("#myMonth").append(`<option value=${monthOptions[x].value}>${monthOptions[x].label}</option>`);
