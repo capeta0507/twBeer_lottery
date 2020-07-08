@@ -582,6 +582,20 @@ footer{
 .over18_checked .over18ImgLb > img{
 	width: 100%;
 }
+.over18_checked .over18ImgBtn{
+	width: 100%;
+	padding: 0 5px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.overClick{
+	width: 40%;
+	cursor: pointer;
+}
+.overClick > img{
+	width: 100%;
+}
 .over18_bear{
 	width: 38%;
 	bottom: 0;
@@ -1690,7 +1704,7 @@ tr > td{
 		opacity: 1;
 	}
 	.over18_bear{
-		width: 32%;
+		width: 15vh;
 		position: absolute;
 		bottom: 12%;
 		right: 5%;

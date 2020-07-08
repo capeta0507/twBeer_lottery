@@ -62,10 +62,17 @@
           </div>
         </div>
         <div class="over18_checked">
-          <label for="overEighteen" class="over18ImgLb">
-            <input id="overEighteen" type="checkbox" style="display: none;">
-            <img id="over18Img" src="./images/over18/18checkFalse.png" alt="">
-          </label>
+          <div class="over18ImgLb">
+            <img id="over18Img" src="./images/over18/18check.png" alt="">
+          </div>
+          <div class="over18ImgBtn">
+            <div id="overYes" class="overClick">
+              <img src="./images/over18/18Yes.png" alt="">
+            </div>
+            <div id="overNo" class="overClick">
+              <img src="./images/over18/18No.png" alt="">
+            </div>
+          </div>
         </div>
         <div class="over18_bear">
           <img src="./images/over18/18Beer.png" alt="">
@@ -82,21 +89,12 @@
       loader.className += ' hidden' // class "loader hidden"
     },1000);
   })
-  $(document).ready(
-    $('#overEighteen').on('click', function(){
-      let check = $(this).is(':checked');
-      // console.log(check)
-      if(check === true){
-        $('#over18Img').attr('src', './images/over18/18checkTrue.png');
-        setTimeout(function(){
-          window.location='index.html'
-        }, 1000)
-
-      } else {
-        $('#over18Img').attr('src', './images/over18/18checkFalse.png');
-      }
-    })
-  )
+    $('#overYes').on('click', function(){
+      window.location='index.html'
+    });
+    $('#overNo').on('click', function(){
+      alert('Sorry~本活動參加者須年滿18歲唷！')
+    });
   setTimeout(function(){
     $('.eighteen_logo').addClass('eighteen_logoHad');
   },2000)
