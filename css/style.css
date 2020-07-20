@@ -430,7 +430,7 @@ footer{
 	display: block;
 	background-color: #00712F;
 	background-image: url(../images/footer_1920.jpg);
-	background-size: 100% auto;
+	background-size: 100% 80%;
     background-repeat: no-repeat;
     background-position: center center;
 	border-top: 1px solid #dcdcdc;
@@ -449,13 +449,13 @@ footer{
 @media only screen and (max-width: 1919px){
 	footer {
 		background-image: url(../images/footer_1680.jpg);
-		background-size: 98% auto;
+		background-size: 98% 80%;
 	}
 }
 @media only screen and (max-width: 1200px){
 	footer {
 		background-image: url(../images/footer_1140.jpg);
-		background-size: 98% auto;
+		background-size: 98% 80%;
 	}
 }
 @media only screen and (max-width: 991px){
